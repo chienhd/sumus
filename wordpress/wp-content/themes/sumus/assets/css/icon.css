@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?5ts9ja');
+  src:  url('../fonts/icomoon.eot?5ts9ja#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?5ts9ja') format('truetype'),
+    url('../fonts/icomoon.woff?5ts9ja') format('woff'),
+    url('../fonts/icomoon.svg?5ts9ja#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-website:before {
+	font-size: 22px; 	font-size: 2.2rem;
+
+  content: "\e900";
+	position: relative;
+	top: 3px;
+	left: 0;
+}
+.icon-backtotop:before {
+  content: "\e600";
+}
+.icon-arrow_left-circle:before {
+  content: "\e901";
+	font-size: 15px;
+	color: #a7bc0a;
+	position: relative;
+	top: 1px;
+	left: 0;
+}
+.icon-arrow_right-circle:before {
+  content: "\e902";
+	font-size: 15px;
+	color: #a7bc0a;
+	position: relative;
+	top: 1px;
+	left: 0;
+}
+.icon-arrow_left:before {
+  content: "\e904";
+}
+.icon-arrow_right:before {
+  content: "\e905";
+}
+.icon-account:before {
+  content: "\e906";
+}
+.icon-calendar:before {
+  content: "\e907";
+}
+.icon-facebook:before {
+  content: "\e908";
+}
+.icon-home:before {
+  content: "\e909";
+}
+.icon-instagram:before {
+  content: "\e90a";
+}
+.icon-list:before {
+  content: "\e90b";
+		position: relative;
+		top: 1.3px;
+		left: -6px;
+}
+.icon-love:before {
+  content: "\e90c";
+}
+.icon-map-pin:before {
+  content: "\e90d";
+	position: relative;
+	top: 1px;
+	left: 0;
+}
+.icon-pinterest:before {
+  content: "\e90e";
+}
+.icon-search:before {
+  content: "\e90f";
+}
+.icon-tel:before {
+  content: "\e910";
+}
+.icon-twitter:before {
+  content: "\e911";
+}
+.icon-cart:before {
+  content: "\e912";
+}
+

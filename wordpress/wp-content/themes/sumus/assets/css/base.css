@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* Base
+------------------------------------------------------------------------------- */
+
+h1,h2,h3,h4,h5,h6 { font-weight: normal }
+p,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0; }
+ol,ul{ list-style: none}
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
+@import url(//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900);
+@import url(//fonts.googleapis.com/css?family=Cinzel:400,700);
+/* @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700); */
+
+* html body{ overflow: hidden; }
+
+html {
+	font-size: 50%;
+	/* position: relative; */
+}
+
+@media screen and (min-width:768px) {
+	html { font-size: 62.5%; }
+}
+
+body{
+	font-family: Lato, Avenir, "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	/* font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif; */
+	font-size: 15px;
+	font-size: 1.5em;
+  line-height: 1.8;
+	-webkit-tap-highlight-color: transparent;
+/* 	text-rendering: optimizeLegibility; */
+	-webkit-text-size-adjust: 100%;
+/* 	-webkit-font-smoothing: antialiased; */
+	color: #595757;
+	word-wrap: break-words
+}
+
+a, a:active, a:hover {
+	color: #595757;
+	text-decoration: none;
+	cursor: pointer
+}
+a:hover {
+	color: #999;
+}
+a:focus {
+}
+
+a.underline {
+	text-decoration: underline;
+}
+
+img {
+  vertical-align: middle;
+	max-width: 100%;
+	width /***/:auto; height: auto;
+   -ms-interpolation-mode: bicubic;
+	image-rendaring: optimizeQuality
+}
+
+.clearfix {
+	zoom: 1
+}
+.clearfix:after,
+.clearfix:before {
+	content: "";
+	display: table
+}
+.clearfix:after {
+	clear: both
+}

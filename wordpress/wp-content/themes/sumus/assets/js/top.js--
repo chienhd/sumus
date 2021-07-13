@@ -1,0 +1,84 @@
+	//sliderPro
+	$(window).load(function () {
+		$('#slider-fullwin').sliderPro({
+			arrows: false,
+			buttons: false,
+			forceSize: 'fullWindow',
+			slideDistance: 0,
+			touchSwipe: false,
+			autoplayOnHover: 'none',
+			slideAnimationDuration: 100,
+			smallsize:480,
+			fade: true,
+			fadeDuration: 2300,
+			//表示方法を変えるサイズ
+			breakpoints: { 480: {
+			forceSize: 'none',
+			width: '100%',
+			height: 450, //横幅
+			arrows: true,//左右の矢印
+			}
+		}
+		});
+
+		$('#slider-event').sliderPro({
+			width: '100%',//横幅
+			autoHeight:true,
+			autoplayOnHover: 'none',
+			arrows: true,//左右の矢印
+			buttons: true,//ナビゲーションボタン
+			slideDistance:0,//スライド同士の距離
+			fade: true,
+			fadeDuration: 2300,
+		autoplay:true
+		});
+
+	});
+
+	/*============================================================
+	*	magnificPopup youtube
+	============================================================*/
+	$(function(){
+		$('.popup-youtube').magnificPopup({
+	  type: 'iframe',
+			mainClass: 'mfp-fade',
+			removalDelay: 400,
+			preloader: false,
+			fixedContentPos: false
+		});
+	});
+	
+	//***** 関連動画とタイトルを消去 *****//
+	jQuery(window).load(function(){
+		jQuery('a[href*="youtube.com/watch"]').magnificPopup({
+		type: 'iframe',
+		 iframe: {
+			 patterns: {
+				 youtube: {
+					 index: 'youtube.com', 
+		    id: 'v=', 
+		    src: '//www.youtube.com/embed/%id%?rel=0&autoplay=1&showinfo=0&rel=0'
+		    }
+		     }
+		    }   
+		 });      
+	});
+	
+	/*============================================================
+	*	magnificPopup modalbox
+	============================================================*/
+	$(function () {
+		$('.popup-modal').magnificPopup({
+			type: 'inline',
+			preloader: false,
+			focus: '#username',
+			removalDelay: 400,
+			modal: true
+		});
+		
+		$(document).on('click', '.popup-modal-dismiss', function (e) {
+			e.preventDefault();
+			$.magnificPopup.close();
+		});
+	});
+

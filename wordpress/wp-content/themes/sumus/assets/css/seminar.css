@@ -1,0 +1,497 @@
+@charset "utf-8";
+
+/* tag list
+---------------------------------------- */
+ul.the_tags {
+}
+ul.the_tags li {
+	list-style-type: none;
+	float: left;
+	background-image: linear-gradient(transparent 40%, rgba(255, 146, 0, 0.4) 60%);
+	padding: 0;
+	margin: 0 1.5em 1em 0;
+	font-weight: normal;
+	font-size: 13px;	font-size: 1.33rem;
+	border-bottom: none;
+}
+.the_tags li a {
+}
+
+.the_tags li a {
+	color: #333;
+}
+.the_tags li a:hover,
+.the_tags li a:active {
+	color: #333;
+	text-decoration: underline;
+}
+
+
+
+body#seminar .l-mainvisual-sub {
+	width: 100%;
+	height: 530px;
+	background-image: url('../images/seminar/bg-header-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body#seminar .l-mainvisual-sub.mini {
+	width: 100%;
+	height: 300px;
+}
+
+body#seminar .read-container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 3em 0;
+	background-image: url('../images/seminar/bg.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 100% 20px;
+}
+
+body#seminar .container {
+	overflow: inherit;
+}
+
+
+body#seminar .section.blog {
+	margin: 1.5em 0;
+}
+
+.post-sumally.seminar {
+	position: relative;
+	background-color: #F9F9F9;
+}
+
+.post-sumally.seminar .post-sumally-body {
+	padding: 0 1em 5em;
+}
+
+.post-sumally.seminar .post-sumally-title a,
+.post-sumally.seminar .post-sumally-title a:active {
+	color: #333;
+}
+.post-sumally.seminar .post-sumally-title a:hover {
+	color: #333;
+}
+
+.post-sumally.seminar .post-sumally-image {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.post-sumally.seminar .post-sumally-image {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	font-family: 'object-fit: cover;'
+}
+
+.post-sumally.seminar .post-sumally-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+
+
+/* 最新1件目の投稿スタイル
+---------------------------------------- */
+.post-sumally.seminar.big {
+	margin-bottom: 6em;
+}
+
+.post-sumally.seminar.big .post-sumally-image {
+	height: inherit !important;
+}
+
+
+.post-sumally.seminar.big .post-sumally-title {
+	font-size: 22px;	font-size: 2.2rem;
+}
+
+.post-sumally.seminar.big .post-sumally-image {
+	width: 50%;
+	float: left;
+	margin-bottom: 0;
+}
+
+.post-sumally.seminar.big .post-sumally-body {
+	width: 50%;
+	float: right;
+	padding: 2em 2em 0;
+}
+
+.post-sumally.seminar.big .button-container {
+	margin: 2em 0 0;
+}
+
+.post-sumally.seminar .date {
+	z-index: 9999;
+	display: block;
+	position: absolute;
+	top: -60px;	right: -10px;
+	width: 110px;	height: 110px;
+	padding: 25px 0 0 0;
+	background: #F5935C;
+	text-align: center;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 1.4;
+	color: #fff;
+	border-radius: 50%;
+	/* CSS3 */
+	behavior: url(ie-css3.htc);
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 2px 0 rgba(185,185,185,0.50);
+}
+
+.post-sumally.seminar .date span {
+	font-size: 10px; font-size: 1.0rem;
+	padding-left: 0.2em;
+}
+
+/* タグ */
+.post-sumally.seminar .tag-label {
+	position: relative;
+	display: block;
+}
+
+.post-sumally.seminar .tag-label a {
+	font-size: 12px; font-size: 1.2rem;
+	list-style-type: none;
+	float: left;
+	background-image: linear-gradient(transparent 60%, rgba(255, 146, 0, 0.4) 60%);
+	padding: 0;
+	margin: 0 1em 0.5em 0;
+	font-weight: normal;
+	border-bottom: none;
+}
+
+.post-sumally.seminar .tag-label a:before{
+	content: '# ';
+}
+
+.post-sumally.seminar .tag-label a:hover {
+}
+
+/* 申し込みボタン */
+.post-sumally.seminar.big .button {
+	position: relative;
+	width: 100%;
+}
+
+.post-sumally.seminar .button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.seminar-info {
+	font-size: 14px; font-size: 1.4rem;
+	color: #858585;
+}
+
+.seminar-info dt {
+	clear: left;
+	float: left;
+	width: 6em;
+}
+
+.seminar-info dd	{
+	margin: 0 0 0 6em;
+}
+
+.seminar-info dd span {
+	font-size: 12px;	font-size: 1.2rem;
+}
+
+
+/* 詳細ページ
+---------------------------------------- */
+.seminar-info-wrapper {
+	padding: 2em 0 3em 0;
+	margin-bottom: 0;
+}
+
+.seminar-info-wrapper a {
+	color: #a7bc0a;
+}
+
+.seminar-info-wrapper a:hover {
+	color: #a7bc0a;
+	text-decoration: underline;
+}
+
+
+.container-seminar {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.seminar-history {
+	max-width: 745px;
+	width: 90%;
+	position: relative;
+	top: -70px;
+	margin: 0 auto -70px;
+	background-color: white;
+ background-repeat: no-repeat;
+	padding: 3em 2em 1em 2em;
+}
+
+.cover {
+	position: relative;
+}
+
+.cover img {
+	margin-bottom: 1.5em !important;
+}
+	
+.cover h3 {
+	position: absolute;
+	width: 80%;
+	margin: 0 0;
+	padding: 0.4em 1em 0 0;
+	bottom: -10px; left: 0;
+	background-color: white;
+	font-weight: bold;
+	font-size: 17px;	font-size: 1.7rem;
+}
+
+.cover h3 a {
+	color: #589d25;
+}
+
+.seminar-history p,
+.seminar-history img {
+	margin-bottom: 2em;
+}
+
+.seminar-history ul {
+	margin: 2em 0.5em 2em 0.5em;
+}
+
+.seminar-history ul li {
+	list-style-type: disc;
+	line-height: 1.6;
+	padding: 0 0 0.3em 0;
+	margin: 0 0 0.5em 15px;
+	font-weight: bold;
+}
+
+.end-seminar {
+	color: #fff;
+	background: #959595;
+	text-align: center;
+	width: 100%;
+	padding: 1em 0;
+}
+
+/* ページ送り
+------------------------------------------------------------------------------- */
+.seminar-info-wrapper .pagination {
+	max-width: 745px;
+	width: 100%;
+	margin: 3em auto 5em;
+	border-top: 1px solid #ddd;
+	padding: 4em 0 0;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+@media screen and (min-width:768px) {
+
+.cover h3 {
+	font-size: 22px;	font-size: 2.2rem;
+}
+
+.seminar-info-wrapper .pagination {
+	margin: 3em auto 1em;
+	padding: 3em 0 0;
+}
+}
+
+.seminar-info-wrapper .pagination ul {
+	padding: 0 0.5%
+}
+
+.seminar-info-wrapper .pagination ul li a {
+	color: #666;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	padding: 8px 15px;
+	margin: 0 2px;
+	white-space: nowrap;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+}
+.seminar-info-wrapper .pagination ul li a:hover{
+	color: #a7bc0a;
+	background-color: #fff;
+	border-color: #a7bc0a;
+}
+.seminar-info-wrapper .pagination span.current{
+	color: #fff;
+	background-color: #a7bc0a;
+	border-color: #a7bc0a;
+	font-weight: bold;
+}
+
+
+
+.seminar-info-wrapper .pagination .prev {
+	float: left;
+	width: 44%;
+	text-align: left;
+	word-break: break-all;
+	line-height: 1.5em
+}
+.seminar-info-wrapper .pagination .next {
+	float: right;
+	width: 44%;
+	text-align: right;
+	word-break: break-all;
+	line-height: 1.5em
+}
+.seminar-info-wrapper .pagination .navitop {
+	float: left;
+	width: 12%;
+	text-align: center;
+	line-height: 1.5em;
+}
+.seminar-info-wrapper .pagination .page-navi {
+  margin: 0 0 5em 0
+}
+
+
+/* 1024px for tablet
+---------------------------------------- */
+@media screen and (max-width: 1024px) { 
+.seminar-info dt {
+	width: 6em;
+}
+
+.seminar-info dd	{
+	margin: 0 0 0 6em;
+}
+}
+
+
+/* 979px for tablet
+---------------------------------------- */
+@media screen and (max-width: 979px) { 
+body#seminar .l-mainvisual-sub {
+	height: 250px;
+}
+
+.seminar-info dt {
+	width: 6em;
+}
+
+.seminar-info dd	{
+	margin: 0 0 0 6em;
+}
+}
+
+
+/* 768px for tablet&smartphone
+---------------------------------------- */
+@media screen and (max-width: 768px) { 
+
+.post-sumally.seminar.big .post-sumally-image {
+	width: 100%;
+	float: none;
+/* 	margin-bottom: 0; */
+}
+
+.post-sumally.seminar.big .post-sumally-body {
+	width: 100%;
+	float: none;
+/* 	padding: 2em 2em 0; */
+}
+
+body#seminar .read-container {
+	background-position: 120% 20px;
+}
+
+}
+
+
+/* 479px for tablet&smartphone
+---------------------------------------- */
+@media screen and (max-width: 479px) {
+	
+body#seminar .l-read-top-inner, .l-section-title-inner,
+body#seminar .l-read-top-inner p, .l-section-title-inner p {
+	text-align: center;
+}
+
+body#seminar .l-read-top-inner .heading-03, .l-section-title-inner .heading-03 {
+	text-align: center;
+}
+
+body#seminar .read-container {
+	background-image: none;
+}
+.post-sumally.seminar,
+.post-sumally.seminar.big {
+	margin-bottom: 5em;
+}
+
+.post-sumally.seminar .date {
+	z-index: 9999;
+	display: block;
+	position: absolute;
+	top: -40px;
+	right: 10px;
+	width: 95px;
+	height: 95px;
+
+	padding: 25px 0 0 0;
+	background: #F5935C;
+	text-align: center;
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 1.4;
+	color: #fff;
+	border-radius: 50%;
+	/* CSS3 */
+	behavior: url(ie-css3.htc);
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 2px 0 rgba(185,185,185,0.50);
+}
+
+
+
+/* サマリー > イメージ
+------------------------------------------------------------------------------- */
+.post-sumally.seminar .post-sumally-image {
+	position: relative;
+	width: 100%;
+	float: none;
+}
+
+.post-sumally.seminar .post-sumally-body {
+	width: 100%;
+	float: none;
+}
+
+
+}

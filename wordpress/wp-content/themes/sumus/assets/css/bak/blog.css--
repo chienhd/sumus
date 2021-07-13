@@ -1,0 +1,1122 @@
+@charset "utf-8";
+
+
+.autor-id-7 {
+  display: none;
+}
+
+
+.alignright { float: right; }
+.alignleft { float: left; }
+
+/* アーカイブとカテゴリーのウィジェットに出る文字列を非表示する */
+label.screen-reader-text {
+	display: none;
+}
+
+.l-side-sns {
+	margin-bottom: 2em;
+}
+
+.select-wrap{
+position:relative;
+overflow:hidden;
+display:inline-block;
+min-width:192px;
+min-width:12em;
+background-color:#ffffff;
+background-image:-webkit-linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
+background-image:linear-gradient(top, #ffffff 0%, #dfe0d9 100%);
+border:1px solid #c0c0c0;
+color:#333;
+}
+
+.select-wrap select{
+-webkit-appearance:none;
+-moz-appearance:none;
+appearance:none;
+position:relative;
+z-index:2;
+display:block;
+width:200%;/* fallback non calc support */
+width:-webkit-calc(100% + 5em);
+margin:0;
+padding:11px 35px 11px 11px;
+padding:.6875rem 2.1875rem .6875rem .6875rem;
+background:transparent;
+border:0;
+outline:none;
+font-size:16px;
+font-size:1rem;
+line-height:1.5;
+}
+
+.entypo-down-open-mini:before{
+/* content:''; 今回のサンプルはCDNを使っているため指定していないけど指定する必要があります。 */
+font-family:'entypo',sans-serif;
+position:absolute;
+z-index:1;
+top:50%;
+right:12px;
+right:.75rem;
+margin-top:-8px;
+margin-top:-.5rem;
+font-size:16px;
+font-size:1rem;
+line-height:1;
+color:#333;
+}
+
+
+/* ブログ 共通
+==================================================================================== */
+/* clearfix */
+.post-sumally {
+	zoom: 1
+}
+
+.post-sumally:after,
+.post-sumally:before {
+	content: "";
+	display: table
+}
+
+.post-sumally:after {
+	clear: both
+}
+
+/* ブログ一覧表示
+==================================================================================== */
+.post-sumally {
+	position: relative;
+	margin-bottom: 3em;
+}
+
+/* 投稿者
+==================================================================================== */
+.l-autor {
+	background:
+	linear-gradient(45deg,  transparent 10px, #f6f6f4 10px),
+	linear-gradient(135deg, transparent 10px, #f6f6f4 10px),
+	linear-gradient(225deg, transparent 10px, #f6f6f4 10px),
+	linear-gradient(315deg, transparent 10px, #f6f6f4 10px);
+	background-color: #f6f6f4;
+	background-position: bottom left, top left, top right, bottom right;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	margin: 2em 0 3em;
+	padding: 1em 0 0;
+}
+
+.l-autor-body {
+	padding: 1em 1.5em 2em;
+}
+
+.autor-face {
+	width: 30%;
+	float: left;
+}
+
+.post-single > .post-body .autor-face img {
+	margin: 0 !important;
+}
+
+.autor-face img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-bottom: 0;
+}
+.autor-txt {
+	float: right;
+	width: 65%;
+}
+
+p.autor-meta {
+	font-size: 13px; font-size: 1.3rem;
+	line-height: 1.6 !important;
+}
+
+h4.autor-name {	
+	color: #589d25;
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.6 !important;
+	margin-bottom: 0.4em;
+}
+
+h4.autor-name span {
+	font-weight: normal;
+	display: block;
+	font-size: 12px; font-size: 1.2rem;
+	color: #999;
+}
+
+
+/* サマリー > イメージ
+------------------------------------------------------------------------------- */
+.post-sumally-image {
+	position: relative;
+	width: 40%;
+	float: left;
+}
+
+
+.category-label {
+	z-index: 9999;
+	position: absolute;
+	top: 0; left: 0;
+	background-color: rgba(29, 33, 41, 0.4);
+	padding: 0.2em 0.7em;
+	font-size: 13px; font-size: 1.3rem;
+}
+.category-label a {
+	color: #fff;
+}
+.category-label a:hover {
+	color: #fff;
+	opacity: 0.5;
+}
+
+.new-label {
+	z-index: 9999;
+	position: absolute;
+	top: 0; left: 0;
+	background-color: #f47300;
+	padding: 0.2em 0.7em;
+	font-size: 13px; font-size: 1.3rem;
+}
+
+.new-label span {
+	color: #fff;
+}
+
+.post-sumally.marche .post-sumally-image {
+	width: 100%;
+	float: none;
+}
+
+.post-sumally-image {
+	margin-bottom: 1em;
+	overflow: hidden;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.post-sumally-image.circle img {
+	border-radius: 0%;
+	-webkit-border-radius: 0%;
+	-moz-border-radius: 0%;
+	border: 4px solid #fff;
+}
+
+/* サマリー > イメージ 効果
+------------------------------------------------------------------------------- */
+figure {
+	position: relative;
+	overflow: hidden;
+	width:auto;
+	background: white;
+}
+
+figcaption {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 8888;
+	width: 100%; height: 100%;
+	background: rgba(0,0,0,.3);
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 0;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: #fff;
+}
+
+figcaption.marche {
+	opacity: 1;
+}
+
+figure:hover figcaption {
+	opacity: 1;
+}
+
+.transform01 {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+figure:hover .transform01 {
+	-webkit-transform: scale(1.04);
+	transform: scale(1.04);
+}
+
+/* サマリー > ボディ
+------------------------------------------------------------------------------- */
+.post-sumally-body {
+	width: 56%;
+	float: right;
+}
+
+.post-sumally-body.marche .icon-facebook,
+.post-sumally-body.marche .icon-instagram {
+	font-size: 16px; 	font-size: 1.6rem;
+	padding-right: 0.2em;
+}
+
+
+/* タイトル
+------------------------------------------------------------------------------- */
+.post-sumally-title {
+	margin: 0 0 0.5em;
+	font-size: 18px; font-size: 1.8rem;
+	line-height: 1.6;
+	font-weight: bold
+}
+
+.section.works .post-sumally-title {
+	margin: 1em 0 0.5em;
+}
+
+.post-sumally-title a,
+.post-sumally-title a:active {
+	color: #589d25;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.post-sumally-title a:hover {
+	color: #589d25;
+	text-decoration: underline;
+}
+
+/* 投稿情報
+------------------------------------------------------------------------------- */
+.post-sumally-read {
+	margin: 0 0 1em 0;
+	font-size: 13px;
+	font-size: 1.3rem;
+	color: #777;
+}
+
+/* 日付 */
+.post-sumally-data {
+	font-size: 13px;
+	font-size: 1.3rem;
+	color: #777;
+}
+
+.post-sumally-data a {
+	color: #777;
+	text-decoration: underline;
+}
+
+.post-sumally-data a:hover {
+	color: #444;
+}
+
+/* ブログ > シングルページ
+==================================================================================== */
+.post-single {
+	margin: 0 1em;
+}
+
+
+body#works .post-single {
+	margin: 0 0 !important;
+}
+
+
+/* ポストヘッダー
+------------------------------------------------------------------------------- */
+.post-single-header {
+	padding: 1.2em 0 0 0;
+	border-top: 1px solid #ccc;	
+	border-bottom: 1px solid #dbdbdb;	
+}
+
+/* 投稿情報 */
+.post-info {
+	font-size: 13px;
+	font-size: 1.3rem;
+	color: #999;
+}
+.post-info a {
+	color: #999;
+}
+.post-info a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+
+/* 投稿情報｜日付 */
+.post-info .date {
+}
+
+/* 投稿情報｜カテゴリ名 */
+.post-info .cat-name {
+	display: inline-block;
+}
+
+/* 投稿者 ニックネーム */
+.writtenby {
+	font-size: 12px;
+	font-size: 1.2rem;
+	font-family: 'Cinzel', serif;
+	font-weight: 400;
+	font-style: italic;
+}
+
+/* タイトル */
+.post-single-header .post-title {
+	margin: 0.5em 0;
+	font-size: 24px;	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+/* ポストボディ
+------------------------------------------------------------------------------- */
+.post-single > .post-body {
+	padding: 2.5em 0 0 0;
+}
+
+.post-single > .post-body p {
+	font-size: 16px;	font-size: 1.6rem;
+	margin-bottom: 1em;
+	line-height: 2;
+}
+
+.post-single .post-body p.autor-meta {
+	font-size: 14px;	font-size: 1.4rem;
+}
+
+.post-single > .post-body img {
+	margin: 1em 0;
+}
+
+.post-single-footer {
+	padding: 0 15px 15px 15px;
+}
+
+/* リンク */
+.post-single p a {
+	text-decoration: underline;
+	color: #1953db;
+}
+
+.post-single p a:hover {
+	text-decoration: none;
+}
+
+/* 見出し2 */
+.post-single .post-body .post-content h2 {
+	font-weight: bold;
+	margin: 1.5em 0 1em;
+}
+
+/* 見出し3 */
+.post-single .post-body .post-content h3 {
+	font-weight: bold;
+	margin: 1em 0 1em;
+	padding: 1.3em 0 0 0;
+}
+
+/* iframeのセンタリング */
+.post-single .post-body iframe {
+	display: block;
+	margin: 2em auto !important;
+}
+
+
+/* ブログ > カスタムフィールド
+==================================================================================== */
+.post-layout-style01 {
+	margin: 2em 0;
+}
+.post-single .post-body .post-content .post-layout-style01 .post-layout-style01-txt h2 {
+	font-weight: bold;
+	margin: 0 0 0.5em 0;
+	font-size: 20px;
+	font-size: 2.0rem;
+}
+.post-layout-style01-photo {
+	float: left;
+	width: 40%;
+}
+.post-layout-style01-txt {
+	float: right;
+	width: 55%;
+}
+.post-single .keyvisual {
+	margin-bottom: 1em;
+}
+.post-single p.caption {
+	font-weight: bold;
+	margin: 0 0 1em 0;
+	color: #ff8100;
+}
+.post-single .label {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+/* ブログ > サイド 
+==================================================================================== */
+
+/* 見出し */
+#side.blog h2,
+h2.widgettitle {
+	margin: 0 0 1.5em;
+	padding: 1.5em 0 0 0;
+	border-top: 1px solid #ccc;	
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* ウィジェット */
+.widget {
+	margin: 0 0 3em 0;
+	list-style: none;
+}
+
+/* 最新の記事 */
+.recent-posts .post-sumally {
+	padding: 0 0 0.5em 0;
+}
+.recent-posts .post-body h3 {
+	font-size: 13px;
+	font-size: 1.3rem;
+	margin-bottom: 0.5em;
+}
+.recent-posts .post-info {
+	margin-bottom: 0.5em;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+/* about */
+#side.blog .about {
+	margin: 0 0 3em 0;
+}
+#side.blog .about img {
+	margin: 0 0 1em 0;
+}
+#side.blog .about h3 {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+#side.blog .about p {
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+#side.blog p.address {
+	margin: 1.5em 0 0 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+/* サイド > タグクラウド
+------------------------------------------------------------------------------- */
+.tagcloud a {
+	font-size: 12px !important; /* 文字のサイズ */
+	line-height: 1.5em;
+	background: #dcd9c1; /* 背景色 */
+	color: #fff; /* 文字色 */
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0.5em 0.8em; /* 文字周りの余白 */
+	margin-top: 3px; /* タグ同士の余白 */
+	border-radius: 4px; /* 角を少し丸く */
+	text-decoration: none;
+}
+.tagcloud a:hover {
+ 	background: #a1a1a1; /* マウスホバー時の背景色 */
+	color: #ffffff; /* マウスホバー時の文字色*/
+}
+
+/* シングルページ > 共通
+------------------------------------------------------------------------------- */
+/* スタッフクレジット */
+.staff-credit,
+.taglist {
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #999;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+.shop-name-sub {
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #999;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+/* リード概要 */
+.post-single .post-read {
+	margin: 1em 0 1.5em;
+	color: #4c4c4c;
+}
+.post-single .post-read p.title{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+/* 写真付き プロフィール
+------------------------------------------------------------------------------- */
+.section-profile {
+	border-top: 1px dotted #999;
+	margin: 2em 0 0;
+	padding: 2em 0 0 0;
+}
+.profile-txt p.url {
+	margin-bottom: 0;
+}
+.profile-face {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.profile-txt {
+}
+
+.profile-txt  p.name {
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.profile-txt p.info {
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.6;
+	margin-bottom: 0.5em;
+}
+
+.profile-txt p.url,
+.profile-txt p.sns {
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+
+
+/*サイド /  ブログサマリー
+------------------------------------------------------------------------------- */
+#side.blog .post-sumally {
+	margin-bottom: 1em;
+}
+
+
+
+
+/* カテゴリーメニュー
+------------------------------------------------------------------------------- */
+.nav-horizontal {
+	background-color: #f0efe8;
+	overflow: hidden;
+	height: 4em;
+	width: 100%;
+}
+
+.nav-horizontal .mask {
+	height: 6em;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.nav-horizontal ul.list {
+	display: inline-table;
+	margin-top: 1em;
+
+	max-width: 100%;
+}
+
+.nav-horizontal li {
+	display: table-cell;
+	white-space: nowrap;
+	padding: 0 0.5em;
+}
+
+/* カテゴリラベル */
+.nav-horizontal a {
+	display: block;
+	padding: 0.6em 1.2em 0.4em;
+	color: #fff;
+	background: #a7bc0a;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-weight: bold;
+	line-height: 1;
+	font-size: 13px;
+	font-size: 1.3rem;
+	border: 2px solid #a7bc0a;
+}
+
+.nav-horizontal a:hover {
+	color: #a7bc0a;
+	background: #fff;
+	border: 2px solid #a7bc0a;
+}
+
+.nav-horizontal li.current-cat a {
+	color: #a7bc0a;
+	background: #fff;
+	border: 2px solid #a7bc0a;
+}
+
+
+/* ラベル */
+.label a {
+	display: inline-block;
+	padding: 0.7em 1em 0.4em;
+	margin-bottom: 1em;
+	color: #fff;
+	background: #b7b7b7;
+	font-family: 'Cinzel', serif;
+	font-weight: 700;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 1;
+	font-size: 13px;
+	font-size: 1.3rem;
+	
+}
+.label a:hover {
+	color: #fff;
+	background: #ccc;
+}
+
+
+/* ブログ > カテゴリーメニュー
+------------------------------------------------------------------------------- */
+/*
+.cat-menu {
+	padding: 0 0 1.5em;
+}
+
+.cat-menu ul {
+	text-align: center;
+}
+
+.cat-menu ul li {
+  display: -moz-inline-box;
+  display: inline-block;
+  /display: inline;
+  /zoom: 1;
+  padding-right: 0.5em;
+	line-height: 2;
+}
+
+.cat-menu li:after {
+  content: "/";
+  margin-left: 0;
+  color: #999;
+}
+
+.cat-menu li:last-child:after {
+  display: none;
+}
+
+.cat-menu  ul li a {
+	color: #333;
+	padding: 0 0.5em;
+}
+.cat-menu  ul li a:hover {
+	color: #637bb7;
+	text-decoration: underline;
+}
+.cat-menu ul li.current-cat a {
+	color: #637bb7;
+	text-decoration: underline;
+}
+*/
+
+
+/* タグ
+------------------------------------------------------------------------------- */
+/*
+.link_list ul {
+	position: relative;
+	margin: 2px 0 1em -6px
+}
+
+.link_list ul li {
+	font-size: 11px;
+	font-size: 1.1rem;
+	text-align: center;
+	float: left;
+	margin: 6px 0 0 6px
+}
+
+.link_list ul li a {
+	display: block;
+	background: #fff;
+	color: #555;
+	border: 1px #e2e2e2 solid;
+	padding: 6px 12px 6px 12px;
+	padding: 6px 12px 6px 12px;
+	line-height: 1.2;
+	border-radius: 2px
+}
+
+.link_list ul li a:hover {
+	text-decoration: none;
+	background: #f5f5f5
+}
+
+.taglist {
+	position: relative;
+	margin: 2px 0 1em -6px
+}
+
+.taglist a {
+	font-size: 11px;
+	font-size: 1.1rem;
+	text-align: center;
+	float: left;
+	margin: 6px 0 0 6px;
+	display: block;
+	background: #fff;
+	color: #555;
+	border: 1px #e2e2e2 solid;
+	padding: 6px 12px 6px 12px;
+	padding: 6px 12px 6px 12px;
+	line-height: 1.2;
+	border-radius: 4px
+}
+
+.taglist a:hover {
+	text-decoration: none;
+	background: #f5f5f5
+}
+*/
+
+
+/* シングルページ > テーブル 共通
+------------------------------------------------------------------------------- */
+.post-single table {
+	border-collapse: collapse;
+	text-align: left;
+	font-size: 13px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+.post-single table th {
+	width: 25%;
+	padding: 10px;
+	font-weight: normal;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.post-single table td {
+	width: 80%;
+	padding: 10px;
+	vertical-align: top;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* wp-pagenaviの設定
+------------------------------------------------------------------------------- */
+.wp-pagenavi {
+	clear: both;
+	text-align:center;
+	margin-bottom: 1em;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+	color: #666;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	padding: 8px 15px;
+	margin: 0 2px;
+	white-space: nowrap;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+}
+.wp-pagenavi a:hover{
+	color: #a7bc0a;
+	background-color: #fff;
+	border-color: #a7bc0a;
+}
+.wp-pagenavi span.current{
+	color: #fff;
+	background-color: #a7bc0a;
+	border-color: #a7bc0a;
+	font-weight: bold;
+}
+
+
+/* ページ送り
+------------------------------------------------------------------------------- */
+.post-single .pagination {
+	width: 100%;
+	margin: 3em auto 5em;
+	border-top: 1px solid #ddd;
+	padding: 4em 0 0;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+@media screen and (min-width:768px) {
+.post-single .pagination {
+	margin: 3em auto 1em;
+	padding: 3em 0 0;
+}
+}
+
+.post-single .pagination ul {
+	padding: 0 0.5%
+}
+
+.pagination ul li a {
+	color: #666;
+	background-color: #ffffff;
+	border: 1px solid #bdbdbd;
+	padding: 8px 15px;
+	margin: 0 2px;
+	white-space: nowrap;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+}
+.pagination ul li a:hover{
+	color: #a7bc0a;
+	background-color: #fff;
+	border-color: #a7bc0a;
+}
+.pagination span.current{
+	color: #fff;
+	background-color: #a7bc0a;
+	border-color: #a7bc0a;
+	font-weight: bold;
+}
+
+
+
+.post-single .pagination .prev {
+	float: left;
+	width: 44%;
+	text-align: left;
+	word-break: break-all;
+	line-height: 1.5em
+}
+.post-single .pagination .next {
+	float: right;
+	width: 44%;
+	text-align: right;
+	word-break: break-all;
+	line-height: 1.5em
+}
+.post-single .pagination .navitop {
+	float: left;
+	width: 12%;
+	text-align: center;
+	line-height: 1.5em;
+}
+.post-single .pagination .page-navi {
+  margin: 0 0 5em 0
+}
+
+/* ウィジエット カレンダーのスタイル
+==================================================================================== */
+#wp-calendar {
+width:100%;
+font-size:12px;
+font-weight:300;
+border-collapse:separate;
+border-spacing:8px;
+margin-left:-2px;
+}
+
+#wp-calendar
+caption {
+display:none;
+}
+
+#wp-calendar tbody
+td {
+margin-bottom:10px;
+text-align:center;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+-ms-border-radius:2px;
+-o-border-radius:2px;
+border-radius:2px;
+border:1px solid #f4f4f4;
+padding:6px;
+}
+
+#wp-calendar tbody td:hover {
+border-color:#e2e2e2;
+}
+
+#wp-calendar tbody
+td.pad {
+border:0;
+}
+
+#wp-calendar tbody
+td#today {
+color:#47C2DC;
+border-color:#47C2DC;
+}
+
+#wp-calendar tfoot td#prev a,#wp-calendar tfoot td#next
+a {
+color:#888;
+font-size:12px;
+font-weight:400;
+position:relative;
+text-transform:uppercase;
+bottom:-9px;
+margin-bottom:1px;
+}
+
+#wp-calendar tfoot
+td#prev {
+text-align:left;
+}
+
+#wp-calendar tfoot
+td#next {
+text-align:right;
+}
+
+#wp-calendar thead
+th {
+font-size:13px;
+font-weight:400;
+color:#888;
+text-align:center;
+padding-bottom:10px;
+}
+
+#wp-calendar tbody td
+a,#wp-calendar tfoot td#prev a:hover,#wp-calendar tfoot td#next a:hover {
+color:#47C2DC;
+}
+
+/* wp_social_bookmarking_light  SNS関連の設定
+------------------------------------------------------------------------------- */
+.wp_social_bookmarking_light{
+	position: relative;
+    border: 0 !important;
+    padding: 10px 0 20px 0 !important;
+    margin: 0 !important;
+}
+.wp_social_bookmarking_light div{
+    float: left !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 5px 0px 0 !important;
+    min-height: 30px !important;
+    line-height: 18px !important;
+    text-indent: 0 !important;
+}
+.wp_social_bookmarking_light img{
+    border: 0 !important;
+    padding: 0;
+    margin: 0;
+    vertical-align: top !important;
+}
+.wp_social_bookmarking_light_clear{
+    clear: both !important;
+}
+#fb-root{
+    display: none;
+}
+.wsbl_twitter{
+}
+.wsbl_facebook_like iframe{
+    max-width: none !important;
+}
+.wsbl_pinterest a{
+    border: 0px !important;
+}
+.wsbl_facebook_like span{
+	vertical-align: top !important;
+}
+.wp_social_bookmarking_light div .pocket-btn{
+	margin: 0 !important;
+}
+.wp_social_bookmarking_light div .pocket-btn iframe{
+	width:60px;
+}
+.fb_iframe_widget span{
+	vertical-align: top !important;
+}
+
+/* min-width: 768px PC
+==================================================================================== */
+@media screen and (min-width:768px){
+.section.blog {
+	margin: 3em 0;
+}
+
+.post-sumally-title {
+	margin: 0.5em 0;
+}
+
+.post-sumally-image {
+	width: auto;
+	float: none;
+}
+.post-sumally-body {
+	width: auto;
+	float: none;
+}
+
+/* アイテム名 */
+.item-name {
+	font-size: 15px;
+	font-size: 1.5rem;
+}
+
+/* プロフィール > イメージ */
+.post-profile-image {
+	width: 150px;
+	float: left;
+}
+.post-profile-image img {
+	width: 130px;
+}
+
+
+.autor-face {
+	width: 20%;
+}
+.autor-txt {
+	width: 76%;
+}
+
+}
