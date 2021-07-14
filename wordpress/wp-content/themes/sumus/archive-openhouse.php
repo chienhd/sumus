@@ -41,12 +41,20 @@ get_header(); ?>
 		<h3 class="heading-01 none-mb">最新の完成見学会</h3>
 	</div><!-- /.section-title -->
 	<div class="row">
-				<?php
+			<?php
+			$yesterday = strtotime('yesterday 23:59:59');
+			$yesterday = date('Y-m-d', $yesterday);
       $toplist = array(
-        'post_type' => 'openhouse',
-        'showposts' => 1,
-        'orderby' => 'date',
-      );
+	        'post_type' => 'openhouse',
+	        'showposts' => 6,
+	        'post_status' => array('publish', 'future'),
+	        'orderby' => 'date',
+        	'order' => 'DESC',
+	        'date_query' => array(
+			        'column' => 'post_date',
+			        'after' => $yesterday
+			    ),
+        );
       ?>
       <?php query_posts($toplist); ?>
       <?php if (have_posts()):while(have_posts()):the_post(); ?>
@@ -172,12 +180,19 @@ get_header(); ?>
 			<h3 class="heading-01 none-mb">これまでの完成見学会</h3>
 	</div>
 	<div class="row">
-				<?php
-      $toplist = array(
-        'post_type' => 'openhouse',
-        'showposts' => 6,
-        'orderby' => 'date',
-      );
+			<?php
+      	$toplist = array(
+	        'post_type' => 'openhouse',
+	        'showposts' => 6,
+	        'post_status' => array('publish'),
+	        'orderby' => 'date',
+        	'order' => 'DESC',
+	        'date_query' => array(
+			        'column' => 'post_date',
+			        /*'after' => '2021-07-12'*/
+			        'before' => date('Y-m-d')
+			    ),
+        );
       ?>
       <?php query_posts($toplist); ?>
       <?php if (have_posts()):while(have_posts()):the_post(); ?>

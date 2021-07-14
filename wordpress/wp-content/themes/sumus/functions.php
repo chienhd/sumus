@@ -291,3 +291,32 @@ function cs_custom_posts_per_page( $query ) {
     }
 }
 add_filter( 'pre_get_posts', 'cs_custom_posts_per_page');
+
+/*
+①カスタム投稿「マルシェパートナー」で投稿した記事（店舗情報）を、
+カスタム投稿「スムースマルシェ」で選択項目として使用し、デザイン画面に表示したい。*/
+function my_acf_load_field( $field ) {
+    /*marche_partner*/
+    //choices
+
+    $args = array(
+        'post_type' => 'marche_partner',
+        'posts_per_page' => -1,
+        'post_status' => array('publish'),
+    );
+
+    $query = new WP_Query($args);
+
+    if($query->have_posts()) :
+        while ( $query->have_posts() ) : $query->the_post();
+            $field['choices'][get_the_ID()] = get_the_title();
+        endwhile;
+        wp_reset_postdata();
+    endif;
+
+
+    return $field;
+    
+}
+
+add_filter('acf/load_field/name=marche-partner', 'my_acf_load_field');

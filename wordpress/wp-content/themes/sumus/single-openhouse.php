@@ -40,7 +40,7 @@
 		<p class="">とき：<? $txt = get_field('time'); if($txt){ ?><? echo $txt; ?><? } ?><br class="visible-xs">ところ：<? $txt = get_field('location'); if($txt){ ?><? echo $txt; ?><? } ?></p>
 		<!-- <p class="small">*詳細な場所はお申し込み後のご連絡となります</p> -->
 	</div>
-	<div class="button-container"><a class="button style04" style="margin-bottom: 1em;"  href="/openhouse/entry/">完成見学会のお申し込みはこちら</a></div>
+	<div class="button-container"><a class="button style04 set-prevoius-post-type-openhouse" data-id="<?php echo get_the_ID(); ?>" style="margin-bottom: 1em;"  href="/openhouse/entry/">完成見学会のお申し込みはこちら</a></div>
 <hr style="margin-bottom: 3em;">
 		<h3 class="serif"><a href="<?php the_permalink(); ?>" class=""><?php the_title(); ?></a></h3>
 		<?php if(have_posts()): while(have_posts()): the_post(); ?>
@@ -62,7 +62,7 @@
 </div><?php }?><!-- 地図掲載 -->
 
 	</div>
-	<div class="button-container"><a class="button style04" style="margin-top: 3em;"  href="/event/openhouse/entry/">完成見学会のお申し込みはこちら</a></div>
+	<div class="button-container"><a class="button style04 set-prevoius-post-type-openhouse" data-id="<?php echo get_the_ID(); ?>" style="margin-top: 3em;"  href="/event/openhouse/entry/">完成見学会のお申し込みはこちら</a></div>
 </div><!-- /.openhouse-info-wrapper -->
 
 

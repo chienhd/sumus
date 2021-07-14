@@ -34,6 +34,9 @@
 	text-align: center;
 	margin: 0 auto 3em;
 }
+.section-title--mod {
+	margin-top: 3em;
+}
 .section-title.partner {
 	width: 90%;
 	text-align: center;
@@ -1336,6 +1339,13 @@ section.section-marche-single {
 .marche-single-maintext img {
 	padding: 0 3em 0 0;
 	max-width: 70%;
+}
+.post-sumally-image--mod > img {
+	padding: 0;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 figcaption>.inner {

@@ -2,18 +2,46 @@
 /*
 Template Name: entry
 */
-get_header(); ?>
+get_header();
 
+$toplist = array(
+    'post_type' => 'openhouse',
+    'posts_per_page' => -1,
+    'post_status' => array('publish', 'future'),
+    'orderby' => 'date',
+    'order' => 'DESC',
+);
+
+$query = new WP_Query($toplist);
+$dataOpenhouse = [];
+if($query->have_posts()) {
+    while($query->have_posts()) {
+        $query->the_post();
+        $dataOpenhouse[get_the_ID()] = get_the_title(); 
+    }
+    wp_reset_postdata(); wp_reset_query();
+}
+
+$entry_date = get_field('entry-date', $_COOKIE['prevoius-post-type-openhouse']);
+$entry_date = preg_split('/\s+/', $entry_date);
+$entry_time = get_field('entry-time', $_COOKIE['prevoius-post-type-openhouse']);
+$entry_time = preg_split('/\s+/', $entry_time);
+?>
+<script type="text/javascript">
+    const DATA_OPENHOUSE = '<?php echo json_encode($dataOpenhouse); ?>';
+    const ENTRY_DATE = '<?php echo json_encode($entry_date); ?>';
+    const ENTRY_TIME = '<?php echo json_encode($entry_time); ?>';
+</script>
 <div id="sb-site">
 <div class="ground sub">
 
 <?php get_template_part( 'include/breadcrumb' ); ?>
 
 <section class="l-mainvisual-sub oh-mainvisual">
-	<div class="mainvisual-sub-txt">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-openhouse.png" alt="一日展" class="logo">
-		<h2>OPEN HOUSE<span>家族のこれまでとこれからをつなぐ住まいづくり。</span></h2>
-	</div>
+    <div class="mainvisual-sub-txt">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-openhouse.png" alt="一日展" class="logo">
+        <h2>OPEN HOUSE<span>家族のこれまでとこれからをつなぐ住まいづくり。</span></h2>
+    </div>
 </section>
 
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
