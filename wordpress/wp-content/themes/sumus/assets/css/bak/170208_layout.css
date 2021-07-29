@@ -1,0 +1,2570 @@
+@charset "utf-8";
+
+.ground.sitetop {
+	filter:alpha(opacity=0); -moz-opacity: 0; opacity: 0;
+}
+
+/* =========================================================
+ セミナー
+========================================================= */
+body#blog .l-mainvisual-sub.seminar {
+	position: relative;
+	width: 100%; height: 125px;
+	background-image: url('/shared/images/seminar/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+@media screen and (min-width:768px) {
+body#blog .l-mainvisual-sub.seminar {
+	width: 100%; height: 260px;
+}
+}
+
+
+
+/* Layout
+------------------------------------------------------------------------------- */
+.ground {
+	background-color: #fff;
+}
+
+.ground.sub {
+	margin-top: 66px;
+}
+
+.section {
+	position: relative;
+	margin: 3em 0;
+}
+
+/* Bootostrap base setting remix */
+.container.none-margin {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* 共通 > 見出し
+------------------------------------------------------------------------------- */
+.section-title {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto 3em;
+}
+
+.section-title.partner {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto 3em;
+}
+
+.section-title.none-mb {
+	margin: 0 auto 0;
+}
+
+/* 見出し01 下線があるコンテンツの見出し */
+.heading-01 {
+	display: inline-block;
+	margin-bottom: 1.5em;
+	padding: 0 0 0.2em 0;
+	border-bottom: 2px solid #595757;
+	font-size: 16px; font-size: 1.6rem;
+	font-weight: bold;
+}
+.heading-01.white {
+	border-bottom: 2px solid #fff;
+}
+.heading-01.none-mb {
+	margin-bottom: 0;
+}
+
+/* 見出し大 色付き */
+.heading-03 {
+	margin-bottom: 0.5em; 
+	font-size: 22px; font-size: 2.2rem;
+	font-weight: bold;
+	border-bottom: none;
+	color: rgba(167, 188, 10, 1);
+}
+
+.content-title p.read {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 2;
+}
+
+/* マーカースタイル */
+span.marker {
+	background-color: #fff7d7;
+}
+
+/* 通常のボタンスタイル */
+.button {
+	background-color: #a7bc0a;
+	border: 2px solid #a7bc0a;
+	color: #fff;
+}
+.button:hover {
+	background-color: #fff;
+	border-color: #a7bc0a;
+	color: #a7bc0a;
+}
+
+/* 通常のボタンスタイル */
+.button.style02 {
+	background-color: #d24f32;
+	border: 2px solid #d24f32;
+	color: #fff;
+}
+.button.style02:hover {
+	background-color: #fff;
+	border-color: #d24f32;
+	color: #d24f32;
+}
+
+/* 共通 > コンテンツ リード
+------------------------------------------------------------------------------- */
+
+
+.read-container {
+	margin: 2em 1em 2em;
+}
+.read-container h2 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1.3em;
+	text-align: center;
+}
+.read-container h2.workshop {
+	font-size: 28px;
+	font-size: 2.8rem;
+	font-weight: normal;
+}
+.read-container h2.workshop span {
+	display: block;
+	padding: 0;
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: #777;
+}
+.read-container p {
+	font-size: 14px; font-size: 1.4rem;
+	line-height: 2;
+	margin-bottom: 1em;
+}
+
+/* 新 */
+.l-read-top {
+	padding: 2.5em 0;
+}
+
+.l-section-title {
+	padding: 1em 0 2.5em;
+}
+
+.l-read-top-inner,
+.l-section-title-inner {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+.l-read-top-inner p,
+.l-section-title-inner p {
+	font-size: 14px; font-size: 1.4rem;
+	line-height: 2;
+	text-align: left;
+}
+.l-read-top-inner.kodawari p {
+	text-align: center;
+}
+
+/* 共通 > 下層メインビジュアル
+------------------------------------------------------------------------------- */
+
+/* 削除 */
+.mainvisual {
+	display: -webkit-box;/* Android4.3以前ブラウザ用 */
+	display: -webkit-flex;/* iOS8以前Safari用 */
+	display: flex;
+	-webkit-box-align: center;/* Android4.3以前ブラウザ用 */
+	-webkit-align-items: center;/* iOS8以前Safari用 */
+	align-items: center;
+	-webkit-box-pack: center;/* Android4.3以前ブラウザ用 */
+	-webkit-justify-content: center;/* iOS8以前Safari用 */
+	justify-content: center;
+	height: 100%;
+}
+/* 削除 */
+/* 下層 メインビジュアル */
+.mainvisual {
+	position: relative;
+	width: 100%;
+	height: 120px;
+  background-size: cover;
+}
+/* 削除 */
+.mainvisual > .content-title {
+	margin: 0 auto;
+}
+
+
+/* 新しいCSS */
+.l-mainvisual-sub {
+	display: -webkit-box;/* Android4.3以前ブラウザ用 */
+	display: -webkit-flex;/* iOS8以前Safari用 */
+	display: flex;
+	-webkit-box-align: center;/* Android4.3以前ブラウザ用 */
+	-webkit-align-items: center;/* iOS8以前Safari用 */
+	align-items: center;
+	-webkit-box-pack: center;/* Android4.3以前ブラウザ用 */
+	-webkit-justify-content: center;/* iOS8以前Safari用 */
+	justify-content: center;
+	height: 100%;
+}
+
+.l-mainvisual-sub {
+	position: relative;
+	width: 100%; height: 125px;
+  background-size: cover;
+}
+
+body#blog .l-mainvisual-sub,
+body#workshop .l-mainvisual-sub,
+body#sumusmarche .l-mainvisual-sub {
+	width: 100%; height: 100px;
+	background-size: contain;
+}
+
+.mainvisual-sub-txt h2 {
+	font-size: 23px;
+	font-size: 2.3rem;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.07em;
+	color: white;
+	text-transform: uppercase;
+	text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+}
+
+.mainvisual-sub-txt h2 span {
+	display: block;
+	font-size: 14px;	 font-size: 1.4rem;
+	letter-spacing: 0;
+	font-weight: normal;
+}
+
+.mainvisual-sub-txt h2.re {
+	color: #595757;
+	text-shadow: rgba(0,0,0,0.1) 0 0 0;
+}
+
+
+
+/* トップページ
+==================================================================================== */
+
+/* ニュース
+------------------------------------------------------------------------------- */
+.news {
+	z-index: 8888;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	font-size: 14px; font-size: 1.4rem;
+/* 	background: yellow; */
+}
+
+.l-news {
+	z-index: 9999;
+	background-color: rgba(0,0,0,0.4); 
+}
+
+.l-news-inner {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	color: #fff;
+	opacity: 1;
+}
+
+.l-news-inner > dl {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	color: #fff;
+}
+
+.l-news-inner > dl dt {
+  float: left;
+	padding: 1em 1em 0.6em;
+  clear: left;
+	border-right: 1px solid rgba(255, 255, 255,0.5);
+}
+
+.l-news-inner > dl dd {
+  float: left;
+  width: 85%;
+	padding: 1em 1em 0.6em;
+}
+
+.l-news-inner a {
+  color: #fff;
+  text-decoration: none;
+}
+.l-news-inner a:hover,
+.l-news-inner a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.ticker {
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	text-align: left;
+}
+.ticker ul {
+	width: 100%;
+	position: relative;
+}
+.ticker ul li {
+	width: 100%;
+	display: none;
+}
+
+/* トップページ > ブログ
+------------------------------------------------------------------------------- */
+.section-top-blog {
+}
+
+/* トップページ > 一日展
+------------------------------------------------------------------------------- */
+.section.openhouse {
+	padding: 3em 0;
+	margin-bottom: 0;
+	background: #f4f2e9;
+}
+
+.openhouse-container {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.9);
+	top: 0; right: 3%; bottom: 0;
+	z-index: 8888;
+	width: 65%;
+	max-width: 447px;
+	height: 100%;
+	text-align: center;
+}
+
+.openhouse-container > .inner {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 1em 0;
+}
+
+#slider-openhouse .sp-buttons {
+	position: absolute;
+	bottom: 0.5em;
+	display: none;
+}
+
+img.logo-openhouse {
+	width: 80px;
+	margin-bottom: 0.2em;
+}
+
+p.title-eng {
+	font-size: 14px; font-size: 1.4rem;
+	color: #999;
+}
+
+.openhouse-container h3 {
+	margin-top: 0.5em;
+	font-weight: bold;
+	font-size: 18px; font-size: 1.8rem;
+}
+
+.openhouse-container .date {
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #cf3e2b;
+	font-weight: bold;
+}
+
+.openhouse-container .time {
+	color: #cf3e2b;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.openhouse-container .add {
+	margin-bottom: 1em;
+}
+
+/* トップページ > 建築事例
+------------------------------------------------------------------------------- */
+.section.section-top-works .section-title {
+	color: #fff;
+}
+.section.section-top-works .heading-01 {
+	border-bottom: 2px solid #fff;
+}
+
+.works-background {
+	padding: 3em 1em 4em;
+	position: relative;
+	background: url('/shared/images/works/bg.jpg') top center no-repeat;	
+	background-size: cover;
+}
+
+.section.section-top-works .container {
+	position: relative;
+	top: -5em;
+	margin-bottom: -5em;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+}
+
+.section-top-works .post-sumally {
+	margin-bottom: 1.5em;
+}
+
+.section-top-works .post-sumally-title {
+	margin: 0;
+}
+
+.section-top-works .post-sumally-image {
+	width: 85%;
+	margin: 0 auto 1em;
+	float: inherit;
+}
+
+.section-top-works .post-sumally-body {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	float: inherit;
+}
+
+.works-background > .content-title {
+	color: #fff;
+}
+
+/* トップページ > イベント
+------------------------------------------------------------------------------- */
+.section.event {
+	padding: 3em 0 0;
+	background: #f4f2e9;
+}
+
+.event-container {
+	position: relative;
+	margin-bottom: 3em;
+}
+
+.event-container.marche {
+	background: none;
+}
+
+.event-container.workshop {
+	background: none;
+}
+
+.event-container .inner {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;
+	background: rgba(255, 255, 255, 1);
+}
+
+.event-container .inner h2 {
+	font-size: 28px;
+	font-size: 2.8rem;
+}
+
+.event-container .inner h2 span {
+	display: block;
+	padding: 0;
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: #777;
+}
+
+.event-container .inner h2 span.marche {
+	padding: 0.5em;
+}
+
+.event-container .inner h2 {
+	margin-bottom: 0.5em;
+	letter-spacing: 0.1em;
+}
+
+.event-container .inner p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 2;
+	margin-bottom: 2em;
+}
+
+.logo-marche {
+	width: 200px;
+}
+
+/* トップページ > アクセス
+------------------------------------------------------------------------------- */
+.section.access {
+	padding-bottom: 0;
+}
+
+.section.access .section-title {
+	margin: 0 auto 1.5em;
+}
+
+.access-info {
+	padding: 1em 1.5em 0 1.5em;	
+	margin: 1.5em 0 0;
+}
+
+.access-info h2 {
+	font-size: 15px;
+	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+}
+
+.access-info ul li {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.access-info p {
+	margin-bottom: 1em;
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.access-info span {
+}
+
+/* google-maps レスポンシブ */
+.google-maps {
+	position: relative;
+	padding-bottom: 60%;  /*これが縦横比*/
+	height: 0;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* こだわり
+==================================================================================== */
+body#quality .l-mainvisual-sub {
+	width: 100%; height: 250px;
+	background-image: url('/shared/images/quality/bg-header-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body#quality .l-mainvisual-sub h2 {
+	text-shadow: rgba(0,0,0,0.1) 2px 2px 0;
+}
+
+.quality-intro {
+	padding: 3em 0 0;
+}
+.quality-intro h3.heading-01,
+.special-container h3.heading-01 {
+	font-size: 21px;	 font-size: 2.1rem;
+}
+
+body#quality .l-read-top {
+	background-image: none;
+}
+
+/* パッシブ関係 */
+.passive {
+	background: #f7f5ed;
+}
+
+.row.passive-item {
+	width: 100%;
+	margin: 1em auto;
+	border-bottom: 2px solid #ececec;
+	padding: 3em 0;
+}
+
+.row.passive-item.last {
+	border-bottom: none;
+}
+
+.row.passive-item img {
+	width: 77px;
+	padding: 0.2em;
+}
+
+.row.passive-item h2{
+	font-size: 18px; font-size: 1.8rem;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.row.passive-item p {
+	font-size: 14px; font-size: 1.4rem;
+}
+
+/* パッシブ関係 */
+.l-special-inner {
+  position: relative;
+	width: 95%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2em 0.6em 0em;
+}
+
+.special-container {
+	padding: 2.5em 0 1em;
+}
+
+.l-special-inner img {
+	margin-bottom: 1.5em;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.l-special-inner-left {
+	width: 100%;
+}
+
+.l-special-inner-left img {
+	margin-bottom: 1.5em;
+}
+
+
+.l-special-inner-right {
+	width: 100%;
+}
+
+/* 基本仕様 */
+.basic-container {
+	padding: 3em 0 2.5em;
+	background-color: #f7f5ed;
+}
+
+.basic-container .container {
+  position: relative;
+	width: 87.5%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 0 0;
+}
+
+/* パッシブ関係 */
+.l-basic-inner {
+	margin-bottom: 1em;
+}
+
+.l-basic-inner img {
+	margin-bottom: 1.5em;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.l-special-inner-right > h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: bold;
+	margin: 0 0 0.5em;
+	text-align: left;
+}
+
+.l-special-inner-right > p,
+.l-special-inner-right > a {
+	font-size: 14px; font-size: 1.4rem;
+	margin-bottom: 1em;
+}
+
+.l-basic-inner-right > h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: bold;
+	margin: 0 0 0.5em;
+	text-align: left;
+}
+
+.l-basic-inner-right > p,
+.l-basic-inner-right > a {
+	font-size: 14px; font-size: 1.4rem;
+	margin-bottom: 1em;
+}
+
+
+/* 住むサポ
+==================================================================================== */
+body#support .l-mainvisual-sub {
+	background-image: url('/shared/images/support/bg-header-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body#support .l-mainvisual-sub.maintenance {
+	background-image: url('/shared/images/support/bg-maintenance-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.support-container {
+	padding: 2.5em 0;
+	background: #f4f4f4;
+  -webkit-box-shadow: inset 0 5px 5px -6px #848484; /* Safari, Chrome用 */
+  -moz-box-shadow: inset 0 5px 5px -6px #848484; /* Firefox用 */
+	box-shadow: inset 0 5px 5px -6px #848484; /* CSS3 */
+}
+
+.l-support-inner {
+  position: relative;
+	width: 95%;
+	margin: 0 auto 2em;
+	padding: 2em 1.5em 2em;
+	background: white;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.l-support-inner img {
+	padding-bottom: 1em;
+}
+
+.l-support-inner h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: normal;
+	margin: 0 0 1em;
+	text-align: center;
+}
+
+.l-support-inner h3 span {
+	display: block;
+	font-size: 12px; font-size: 1.2rem;
+	font-weight: normal;
+	margin: 0 0 1em;
+	text-align: center;
+}
+
+.l-support-inner p,
+.l-support-inner a {
+	font-size: 13px; font-size: 1.3rem;
+}
+
+.l-support-inner p.mb {
+	margin-bottom: 1em;
+}
+
+.circle-item {
+	z-index: 9999;
+	display: block;
+	position: absolute;
+	top: -10px; left: -10px;
+	width: 55px;
+	height: 55px;
+	padding: 20px 5px;
+	background: #dd5151;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #fff;
+	border-radius: 50px; /* CSS3 */
+	behavior: url(ie-css3.htc);  /* for less than IE8 */
+	-moz-border-radius: 50px; /* Firefox */
+	-webkit-border-radius: 50px; /* Safari and Chrome */
+}
+
+.circle-item.blue {
+	background: #1c50ab;
+}
+.circle-item.red {
+	background: #a62126;
+}
+.circle-item.green {
+	background: #2b610a;
+}
+
+img.schedule {
+	display: block;
+	margin: 0 auto;
+	max-width: 920px;
+}
+
+
+/*	table
+-------------------------------------------------------------------*/
+table.tenken {
+	margin:0 auto 3em;
+	width:100%;
+	font-size:12px; font-size:1.2rem;
+	background-color:#fff;
+}
+
+table.tenken th {
+	vertical-align: middle;
+	border-right:1px solid #fff;
+	border-bottom:1px solid #fff;
+	background-color: #888880;
+	color:#fff;
+	padding: 0.5em 0.8em;
+	white-space: nowrap;
+	font-size:11px; font-size:1.1rem;
+}
+
+table.tenken th.small {
+	font-size:11px; font-size:1.1rem;
+	padding: 0.8em 0.5em 0.5em;
+}
+
+table.tenken td {
+	border-right:1px solid #d8d6d4;
+	border-top:1px solid #d8d6d4;
+	border-bottom:1px solid #d8d6d4;
+	text-align: center;
+	font-size:11px; font-size:1.1rem;
+}
+
+table.tenken td.tenken-title {
+	vertical-align: middle;
+	text-align: left;
+	padding: 0.5em;
+}
+
+table.tenken td.tenken-title span {
+	display: block;
+	font-size: 10px; font-size: 1.0rem;
+}
+
+table.tenken th.long {
+	color: #444;
+	background: #f6f6f6;
+	line-height: 1.6;
+}
+
+table.tenken th.short {
+	color: #444;
+	background: #f6f6f6;
+	line-height: 1.6;
+}
+
+
+/* 家づくりの流れ
+==================================================================================== */
+body#flow .l-mainvisual-sub {
+	background-image: url('/shared/images/flow/bg-heade-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.flow-container {
+	padding: 2.5em 0;
+	background: #f4f2e9;
+  -webkit-box-shadow: inset 0 5px 5px -6px #848484; /* Safari, Chrome用 */
+  -moz-box-shadow: inset 0 5px 5px -6px #848484; /* Firefox用 */
+	box-shadow: inset 0 5px 5px -6px #848484; /* CSS3 */
+}
+
+.flow-container .container {
+	background-image: url('/shared/images/flow/bg-border.gif');
+	background-repeat: repeat-y;
+	background-position: center center;
+}
+
+.flow-title {
+	text-align: center;
+}
+
+.flow-title > h2 {
+	width: auto;
+	display: inline-block;
+	margin-bottom: 3em;
+	padding: 1em 1.2em 0.8em;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid #a7bc0a;
+	background: #fff;
+	font-size: 14px; font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1;
+	color: #a7bc0a;
+}
+
+.l-flow-inner {
+  position: relative;
+	width: 95%;
+	margin: 0 auto 2em;
+	padding: 2em 1.5em 2em;
+	background: white;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.l-flow-inner.large {
+	width: 97%;
+}
+
+.l-flow-inner.none-mg {
+	margin: 0 auto 0;
+}
+
+.flow-pickup {
+  position: relative;
+	width: 95%;
+	margin: 0 auto 0;
+	padding: 2em 1.5em 2em;
+	background: #cdc7b3;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 14px; font-size: 1.4rem;
+}
+
+.flow-pickup p {
+	margin: 0 0 0.5em 0;
+}
+
+.l-flow-inner h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: normal;
+	margin: 0 0 1em;
+	text-align: center;
+}
+
+.l-flow-inner p {
+	font-size: 14px; font-size: 1.4rem;
+}
+
+.l-flow-inner p.mb {
+	margin-bottom: 1em;
+}
+
+span.number {
+	font-weight: bold;
+  color: #a9bd0d;
+  text-align: center;
+}
+
+.l-flow-inner img {
+	margin-bottom: 1em;
+}
+
+.topics {
+	border-top: 1px solid #eaeaea;
+	padding: 1em 0;
+	margin: 1em 0 0;
+}
+
+.topics p {
+	font-size: 12px; font-size: 1.2rem;
+}
+
+
+.l-flow-inner-left {
+	width: 100%;
+}
+
+.l-flow-inner-right {
+	width: 100%;
+}
+
+.l-flow-inner-right > h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: normal;
+	margin: 0 0 1em;
+	text-align: left;
+}
+
+
+/* スムースマルシェ
+==================================================================================== */
+.fullwidth-bg {
+	width: 100%;
+}
+
+#sumusmarche .fullwidth-bg {
+	position: relative;
+	background: url("/shared/images/marche/bg-mainvisual-sp.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.fullwidth-bg-container {
+	padding: 3.5em 0;
+	text-align: center;
+}
+
+#sumusmarche .fullwidth-bg-container {
+	padding: 3.2em 0;
+	text-align: center;
+}
+
+/* スムースマルシェ ロゴ */
+#sumusmarche .fullwidth-bg-container h2 img {
+	width: 210px;
+}
+
+#sumusmarche .fullwidth-bg-container h2 span {
+	display: block;
+	padding: 0.5em 0;
+	font-size: 15px; font-size: 1.5rem;
+	color: #777;
+}
+
+/* キャッチコピー */
+#sumusmarche .fullwidth-bg-container h3 {
+	font-size: 20px; font-size: 2.0rem;
+	margin: 0.8em 0 0.5em;
+	padding-left: 1em;
+}
+
+#sumusmarche .fullwidth-bg-container h4 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+#sumusmarche .fullwidth-bg-container p.read {
+	font-size: 14px; font-size: 1.4rem;
+	line-height: 2.1;
+	padding-left: 1em;
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+#sumusmarche .fullwidth-bg-container hr.style02 {
+	width: 60px;
+	color: #000;
+	margin-bottom: 1.5em;
+  border-top: 1px solid #8a8a8a;
+}
+
+#sumusmarche .fullwidth-bg-container p.info {
+	margin: 0.8em 0;
+	font-size: 20px; font-size: 2.0rem;
+	font-weight: bold;
+	color: #d24f32;
+	line-height: 1.5;
+}
+
+#sumusmarche .fullwidth-bg-container p.info span.small {
+	font-size: 14px; font-size: 1.4rem;
+}
+
+#sumusmarche .fullwidth-bg-container p.info span.small {
+	font-size: 14px; font-size: 1.4rem;
+}
+
+#sumusmarche .fullwidth-bg-container p.access {
+	margin: 0 0 1em;
+}
+
+/* スムースマルシェ > アーカイブ
+------------------------------------------------------------------------------- */
+body#sumusmarche .l-mainvisual-sub {
+	background-image: url('/shared/images/marche/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fefffa;
+}
+
+section.section-marche-single {
+	margin: 0;
+}
+
+.marche-visual-single {
+}
+
+.marche-visual-single .left {
+	width: 100%;
+	height: 150px;
+}
+
+.marche-visual-single .right {
+	width: 100%;
+}
+
+.post-sumally.marche {
+	margin-bottom: 1em;
+}
+
+.post-sumally.marche .post-sumally-body {
+	width: 100%;
+	float: none;
+}
+
+.marche-single-maintext {
+	padding:3em 0;
+	font-size: 14px; font-size: 1.4rem;
+	text-align: center;
+}
+
+figcaption > .inner {
+	text-align: center;
+}
+
+figcaption > .inner p {
+	font-size: 16px; font-size: 1.6rem;
+}
+
+figcaption > .inner p span {
+	font-size: 13px; font-size: 1.3rem;
+	display: block;
+	font-weight: normal;
+}
+
+/* マルシェパートナー */
+.post-sumally.marche .post-sumally-read {
+	font-size: 11px; font-size: 1.1rem;
+}
+
+.post-sumally.marche p.sns {
+	font-size: 11px; font-size: 1.1rem;
+}
+.post-sumally.marche p.sns a span {
+	padding: 0 0.5em 0 0;
+}
+
+/* スムースマルシェ > ニュース
+------------------------------------------------------------------------------- */
+.news-inner {
+	margin-bottom: 2em;
+}
+
+.news-inner ul {
+	padding-bottom: 1em;
+}
+.news-inner ul li a {
+	display: block;
+	padding: 1em;
+	color: #333;
+	border-bottom: 1px solid #ccc;
+}
+.news-inner ul li a > div > * {
+	display: inline-block;
+	font-size: 14px; font-size: 1.4rem;
+}
+.news-inner ul li a > div > p {
+	display: block;
+	padding: 0.5em 0 0 0;
+	line-height: 2;
+	text-decoration: underline;
+}
+.news-inner ul li a:hover div p {
+	text-decoration: none;
+}
+.news-inner ul li a .date {
+	padding: 0 1em 0 0;
+	color: #999;
+}
+.news-inner ul li .label {
+	color: #fff;
+	font-style: normal;
+	background: #d0d0d0;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	font-size: 14px; font-size: 1.4rem;
+}
+.news-inner ul li .label em {
+	font-size: 14px; font-size: 1.4rem;
+	font-style: normal;
+}
+
+/* スムースマルシェ 出店者向け */
+.mainvisual.forshop {
+	color: #fff;
+	background-image: url('/shared/images/marche/bg-forshop.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: auto;
+}
+
+/* スムースマルシェ
+==================================================================================== */
+.visual {
+	height: 500px;
+	background: #999;
+}
+
+/* スムースの想い
+==================================================================================== */
+body#about .l-mainvisual-sub {
+	background-image: url('/shared/images/about/bg-heade-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+body#about .message h2 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	text-align: center;
+	padding: 0 0 1.5em 0;
+}
+
+body#about .message p {
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.8;
+	margin-bottom: 1em;
+}
+
+body#about .message img {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+body#about .message img.mt-none {
+	margin-top: 0;
+}
+
+body#about .verse.one {
+	position: relative;
+	width: 100%;
+	margin: 0 auto 1.5em;
+}
+
+.verse.one p {
+	padding: 0;
+}
+img.positon-01 {
+	position: static;
+	margin-bottom: 1em;
+}
+img.positon-02 {
+	position: static;
+}
+img.positon-03 {
+	position: static;
+	margin-bottom: 1em;
+}
+
+/* ブログ
+==================================================================================== */
+.section.blog {
+	margin: 1.5em 0;
+}
+
+body#blog .l-mainvisual-sub {
+	background-image: url('/shared/images/blog/bg-header-sp.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fefffa;
+}
+
+/* そのほかのスタイルはblog.css, side.css に記述 */
+
+/* 建築事例
+==================================================================================== */
+body#works .l-mainvisual-sub {
+	background-image: url('/shared/images/works/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.section.works {
+	margin: 0 0 3em;
+}
+
+.section.works .container {
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 1.5em;
+}
+
+.section.works .post-sumally-body {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	float: inherit;
+}
+
+.section.works .post-sumally-image {
+	width: 90%;
+	margin: 0 auto;
+	float: inherit;
+}
+
+/* 建築事例 > 詳細ページ
+------------------------------------------------------------------------------- */
+.section.section-single-works {
+}
+
+.section-single-works p.sub-title {
+	color: #8c8c8c;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.section-single-works hr.style02 {
+	width: 60px;
+	color: #8c8c8c;
+	margin-bottom: 30px;
+}
+
+.section.section-single-works .row > .left {
+	position: relative;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+.section.section-single-works .row > .right {
+	margin-top: 1em;
+}
+
+.section.section-single-works .row {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+.section.section-single-works .row > .left .inner,
+.section.section-single-works .row > .right .inner {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1em;
+	background: white;
+}
+
+.section.section-single-works .post-content {
+	width: 85%;
+	margin: 1.5em auto;
+}
+
+.section.section-single-works .post-single-header {
+	padding: 1.2em 0 0 0;
+	border-top: 5px solid #cdcdcd;	
+	border-bottom: none;	
+}
+
+/* スライドありのパターン */
+.section.slide .row > .left {
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.section.slide .row > .right {
+	margin-top: 0;
+}
+
+.section.slide .post-single-header {
+	padding: 1.2em 0 0 0;
+	border-top: 5px solid #cdcdcd;	
+	border-bottom: none;	
+} 
+
+/* お気に入りスペース */
+.favorite-space {
+/* 	display: none; */
+}
+
+.favorite-space img {
+	margin-bottom: 2em;
+}
+
+/* ワークショップ
+==================================================================================== */
+body#workshop .l-mainvisual-sub {
+	background-image: url('/shared/images/workshop/bg-header-sp.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #fefffa;
+	background-size: contain;
+}
+
+.section.section-workshop {
+	margin: 1em 0;
+}
+
+.workshop-container {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.workshop-container.workshop-wood {
+	background: none;
+}
+
+.workshop-container.workshop {
+	background: none;
+
+/*
+	background: url('/shared/images/workshop/bg_workshop.jpg') top right no-repeat;
+	background-size: cover;
+*/
+}
+
+.workshop-container .inner {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2em;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.workshop-container .inner h2 {
+	font-size: 25px;
+	font-size: 2.5rem;
+}
+
+.workshop-container .inner h2 span {
+	display: block;
+	padding: 0;
+
+	font-family: Lato, Avenir, "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	text-transform: uppercase;
+	font-size: 13px; font-size: 1.3rem;
+	color: #777;
+	letter-spacing: 0.08em;
+}
+
+.workshop-container .inner h2 {
+	margin-bottom: 0.5em;
+	letter-spacing: 0.1em;
+}
+
+.workshop-container .inner p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	line-height: 2;
+	margin-bottom: 2em;
+}
+
+/* ワークショップ > ブログサマリー */
+.cat-label {
+	position: relative;
+	left: -8px;
+
+	margin-top: 0;
+	margin-bottom: 1em;
+	display: block;
+}
+
+.cat-label a {
+	padding: 0.7em 1.5em 0.4em;
+	color: #fff;
+	background: #ff8161;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-weight: bold;
+	line-height: 1;
+	font-size: 11px;
+	font-size: 1.1rem;
+}
+
+.cat-label a:hover {
+	color: #fff;
+	background: #e8d9d1;
+}
+
+/*スムース木工広場 */
+.cat-label.woodworkshop a{
+	background: #fc9702;
+}
+
+.cat-label.woodworkshop a:hover {
+	background: #ffb94f;
+}
+
+
+/* ホスト */
+p.host-info {
+	font-size: 12px;
+	font-size: 1.2rem;
+	color: #969696;
+	padding-bottom: 0.8em;
+}
+
+p.host-info.single {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/* ブログサマリー > インフォメーション */
+.post-sumally-body ul.indent {
+	margin-left: 0;
+	font-size: 12px;
+	font-size: 1.2rem;
+}
+
+.post-sumally-body {
+}
+
+.post-sumally-body ul.indent li {
+	margin-bottom: 2px;
+}
+
+.post-sumally-body strong {
+	z-index: 9999;
+	display: block;
+	position: absolute;
+	top: -12px; left: -5px;
+	width: 45px;
+	height: 45px;
+	padding: 17px 0;
+	background: #dd5151;
+	text-align: center;
+	font-size: 9px;
+	line-height: 1.4;
+	color: #fff;
+	border-radius: 50px; /* CSS3 */
+	behavior: url(ie-css3.htc);  /* for less than IE8 */
+	-moz-border-radius: 50px; /* Firefox */
+	-webkit-border-radius: 50px; /* Safari and Chrome */
+	-webkit-font-smoothing: antialiased; /* スライド時のにじみ解消 */
+}
+/* 終了 */
+.post-sumally-body strong.fix {
+	line-height: 1.2;
+	padding: 13px 0;
+	background: #d7a5a5;
+}
+
+.post-sumally-body ul.ws-detail {
+	display: none;
+}
+
+
+/* スタッフ紹介
+==================================================================================== */
+body#staff .l-mainvisual-sub {
+	background-image: url('/shared/images/staff/bg-heade-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.section.section-staff,
+.section.section-staff-single {
+}
+
+.section.section-staff .post-sumally-body,
+.section.section-staff .post-sumally-image {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	float: inherit;
+}
+
+.profile-image img {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.post-sumally-title.profile {
+	margin: 0.5em 0 0;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: bold
+}
+
+h2.post-sumally-title.profile  {
+	padding: 0.5em 0 0.5em;
+	line-height: 1.5;
+}
+
+.post-sumally-title.profile span {
+	font-weight: normal;
+	display: block;
+	color: #adadad;
+	font-size: 13px;
+	font-size: 1.3rem;
+	letter-spacing: 0.05em;
+}
+
+/* スタッフ紹介 > 詳細
+------------------------------------------------------------------------------- */
+.section.section-staff-single .post-sumally-body {
+	width: 54%;
+}
+
+.section.section-staff-single .profile-image {
+	width: 40%;
+	float: left;
+}
+
+.section-staff-single h2 {
+	font-size: 24px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	/* 	padding-top: 1em; */
+	border-bottom: none;
+}
+
+.section-staff-single h2.heading-01 {
+	color: rgba(167, 188, 10, 1);
+}
+
+.section-staff-single h3 {
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.section-staff-single p {
+	font-size: 14px;
+	font-size: 1.4rem;	
+	margin-bottom: 1.5em;
+}
+
+/* 会社案内
+==================================================================================== */
+body#company .l-mainvisual-sub {
+	background-image: url('../images/company/bg-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+section.section-company {
+	margin: 3em 0;
+}
+
+/* 創業の想い
+------------------------------------------------------------------------------- */
+.section-philosophy {
+}
+
+.section-philosophy h2 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.section-philosophy p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 1em;
+}
+
+.section-philosophy img.profile {
+	float: right;
+	width: 100px;
+	padding: 2em 0 1em;
+}
+.section-philosophy img.profile-name {
+	width: 65px;
+	margin: 10px 0;
+	position: relative;
+	right: -2px;
+}
+
+
+/* 事業紹介
+------------------------------------------------------------------------------- */
+section.section-business {
+	padding: 3em 0 2em;
+	background: #f4f2e9;
+}
+
+.section-business h2 {
+	font-size: 18px;
+	font-size: 1.8rem;
+	font-weight: bold;
+/* 	padding-top: 1em; */
+}
+
+.section-business h3 {
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.section-business p {
+	font-size: 14px;
+	font-size: 1.4rem;	
+	margin-bottom: 1.5em;
+}
+
+.section-business img {
+	padding: 0.2em 0;
+}
+
+.section-business h1 img {
+	padding: 1em  0 1.2em 0;
+}
+
+.section-business h1 img.sumus {
+	width: 145px;
+}
+
+.section-business h1 img.shop {
+	width: 215px;
+}
+
+/* 会社概要
+------------------------------------------------------------------------------- */
+.section.section-company-date {
+/* 	padding: 3em 0; */
+	margin-bottom: 2em;
+}
+
+.section-company-date table {
+	margin: 0 auto;
+	font-size: 14px;
+	font-size: 1.4rem;	
+}
+
+.section-company-date table tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.section-company-date table th,
+.section-company-date table td {
+	padding: 15px 0;
+	vertical-align: baseline;
+}
+
+.section-company-date table th {
+	width: 30%;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 1em;
+}
+
+/* google-maps レスポンシブ */
+.section-company-date .google-maps {
+	padding-bottom: 70%;  /*これが縦横比*/
+}
+
+/* 採用情報
+==================================================================================== */
+body#recruit .mainvisual {
+	background-image: url('/shared/images/recruit/bg-heade-pc.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* 採用情報 見出し */
+.section-recruit-info > h2{
+	border-top: 1px solid #ccc;
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.section-recruit-info p {
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+/* 採用情報 送り先 */
+.entry-container {
+	font-size: 14px;
+	font-size: 1.4rem;
+	background-color: #f7f7f7;
+	margin: 2em 0;
+	padding: 2em;
+}
+
+/* 個人情報
+==================================================================================== */
+body#privacypolicy .mainvisual {
+	background-image: none;
+	background-color: #dbd7c6;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* 採用情報 見出し */
+.section-privacy-info > h2{
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.section-privacy-info p {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-bottom: 2em;
+}
+
+
+/* contact form
+==================================================================================== */
+.form-inner {
+	margin: 3em 0;
+}
+
+.mw_wp_form .error {
+	color: #fff !important;
+	background-color: #c44444;
+	display: inline-block !important;
+	padding: 0 0.5em 0 1em;
+	margin: 0 1em;
+	font-size: 13px;
+	font-size: 1.3rem;
+}
+
+/* 必須項目ラベル */
+span.required {
+	position: relative;
+	top: -2px;
+	margin-left: 0.5em;
+	padding: 0.4em 0.6em 0.3em;
+	color: #fff;
+	font-size: 11px;
+	font-size: 1.1rem;
+	line-height: 1;
+	background: rgba(167, 188, 10, 1);
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* お問い合わせフォーム  */
+dl.form-01 {
+	margin: 3em 0;
+}
+dl.form-01 dt{
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	padding: 0 0 0 0.5em;
+	border-left: 4px solid #ccc;
+}
+dl.form-01 dd {
+	margin-bottom: 1em;
+}
+
+.check {
+	text-align: center;
+}
+
+
+
+/*戻る・確認 / 送信ボタン*/
+/**********MW WP Formボタン*********/
+/*確認・送信ボタン*/
+.kakunin {
+	background: rgba(167, 188, 10, 1);
+	border: 1px solid #DDD;
+	color: #FFF;
+	width: 100%;
+	padding: 10px 0;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+/*戻るボタン*/
+.modoru {
+	background: #e2e2e2;
+	border: 1px solid #DDD;
+	color: #FFF;
+	width: 100%;
+	padding: 10px 0;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 0.5em;
+}
+
+
+
+/*
+.btnA {
+	width: 300px;
+	background: #FF6600;
+	-webkit-border-radius: 5px;
+	float: left;
+}
+*/
+
+/*
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+input[type="submit"]::focus,
+input[type="button"]::focus {
+  outline-offset: -2px;
+}
+*/
+
+/* -----------------------------------------------------------------------------
+checkbox
+--------------------------------------------------------------------------------*/
+/*
+input.checkbox01[type="checkbox"] {
+	display: none;
+}
+*/
+
+.area-code {
+	width: 25% !important;
+}
+
+.login label {
+	position: relative;
+	display: inline-block;
+	padding: 3px 3px 3px 28px;
+	cursor: pointer;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.login label::before,
+.login label::after {
+	position: absolute;
+	content: '';
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+.login label::before {
+	top: 50%;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	margin-top: -12px;
+	background: #f4f4f4;
+	border: 1px solid #ccc;
+}
+.login label::after {
+	opacity: 0;
+	top: 50%;
+	left: 3px;
+	width: 12px;
+	height: 8px;
+	margin-top: -8px;
+	border-left: 4px solid #000434;
+	border-bottom: 4px solid #000434;
+	-webkit-transform: rotate(-45deg) scale(.5);
+	transform: rotate(-45deg) scale(.5);
+}
+.login label:hover::before {
+	background: #fff;
+}
+labe.checkbox01[type="checkbox"]:checked + label::before {
+	background: #fff;
+	border: 1px solid #000434;
+}
+labe.checkbox01 [type="checkbox"]:checked + label::after {
+	opacity: 1;
+	-webkit-transform: rotate(-45deg) scale(1);
+	transform: rotate(-45deg) scale(1);
+}
+
+/* -----------------------------------------------------------------------------
+	テキストエリア
+--------------------------------------------------------------------------------*/
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+	margin: 0.4em 0 0.4em;
+	padding: 0.4em;
+	line-height: 1.8;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* padding対策 */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mwform-tel-field input[type="text"] {
+	width: 100px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/* padding対策 */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* min-width:375px
+==================================================================================== */
+@media screen and (min-width:375px) {
+}
+
+/* min-width:480px
+==================================================================================== */
+@media screen and (min-width:480px) {
+
+}
+
+/* min-width: 768px Tablet 縦 PC 
+==================================================================================== */
+@media screen and (min-width:768px) {
+
+.ground.sub {
+	margin-top: 77px;
+}
+
+/* 共通
+------------------------------------------------------------------------------- */
+/*
+.section {
+	padding: 0 0 3em;
+}
+*/
+
+/* 下層ページ メインビジュアル （削除候補） */
+.mainvisual {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	background-size: cover;
+}
+
+.l-mainvisual-sub {
+	position: relative;
+	width: 100%; height: 250px;
+	background-size: cover;
+}
+
+/* 下層ページ メインビジュアル小 */
+body#blog .l-mainvisual-sub,
+body#workshop .l-mainvisual-sub,
+body#sumusmarche .l-mainvisual-sub {
+	width: 100%; height: 160px;
+}
+
+
+/* 共通 コンテンツ リード
+------------------------------------------------------------------------------- */
+
+/*削除*/
+.read-container {
+	margin: 3em 0;
+}
+.read-container.none-mb {
+	margin: 3em 0 0;
+}
+.read-container h2 {
+	text-align: center;
+}
+.read-container p {
+	text-align: center;
+}
+
+/*新*/
+.l-read-top-inner p,
+.l-section-title-inner p {
+	text-align: center;
+}
+
+
+/* トップページ
+==================================================================================== */
+
+/* トップページ > オープンハウス
+------------------------------------------------------------------------------- */
+.section.openhouse {
+	padding: 5em 0;
+}
+
+.openhouse-content {
+	position: absolute;
+	top: 0; right: 4%; bottom: 0;
+	z-index: 8888;
+	width: 32%;
+	max-width: 447px;
+	height: 100%;
+	text-align: center;
+	background: white;
+}
+
+img.logo-openhouse {
+	width: 160px;
+}
+
+.openhouse-content h3 {
+	font-size: 18px;
+	font-size: 1.8rem;
+}
+
+.openhouse-content .date {
+	margin-top: 1em;
+	font-size: 30px;
+	font-size: 3.0rem;
+}
+
+#slider-openhouse .sp-buttons {
+	display: block;
+}
+
+/* トップページ > 建築事例
+------------------------------------------------------------------------------- */
+section-top-works .post-sumally-image {
+	width: 90%;
+}
+
+.works-background {
+	padding: 7em 1em 7em;
+}
+
+/* トップページ > イベント
+------------------------------------------------------------------------------- */
+.event-container {
+	position: relative;
+	height: 460px;
+}
+
+.event-container .inner {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 3em;
+}
+
+.logo-marche {
+	width: 270px;
+}
+
+.event-container.marche {
+	background: url(/shared/images/home/bg_marche.jpg) top right no-repeat;
+	background-size: contain;
+}
+
+.event-container.workshop {
+	background: url(/shared/images/home/bg_workshop.jpg) top left no-repeat;
+	background-size: contain;
+}
+
+.event-container.workshop > .inner {
+	right: -75%;
+}
+
+/* トップページ > アクセス
+------------------------------------------------------------------------------- */
+.access-info {
+	height: 180px;
+	padding: 1em 0 0 1.5em;	
+	margin: 1.5em 0 0;
+	border-left: 1px solid #ccc;
+}
+
+.google-maps {
+	padding-bottom: 40%;  /*これが縦横比*/
+}
+
+/* 　建築事例
+==================================================================================== */
+.section.section-single-works .row > .left {
+	position: relative;
+	top: -200px;
+	left: 25px;
+}
+
+/* スライドありのパターン */
+.section.slide .row > .left {
+	position: relative;
+	top: 0;
+	left: 25px;
+}
+
+/* 　こだわり
+==================================================================================== */
+.row.passive-item img {
+	width: 120px;
+}
+
+/* 　スムースマルシェ
+==================================================================================== */
+.fullwindow-container {
+	max-width: 680px;
+	margin: 0 auto;
+}
+
+.fullwidth-bg-container {
+}
+
+#sumusmarche .fullwidth-bg {
+	background: url("/shared/images/marche/bg-mainvisual-pc.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+.news-inner ul li a > div > p {
+	display: inline-block;
+}
+
+
+/* ブログ
+==================================================================================== */
+body#blog .l-mainvisual-sub {
+	background-image: url('/shared/images/blog/bg-header.jpg');
+	background-size: auto;
+}
+
+/* ワークショップ
+==================================================================================== */
+body#workshop .l-mainvisual-sub {
+	background-image: url('/shared/images/workshop/bg-header.jpg');
+	background-size: auto;
+}
+
+.workshop-container {
+	position: relative;
+	height: 460px;
+}
+
+.workshop-container {
+	position: relative;
+	margin-bottom: 3em;
+}
+
+.workshop-container .inner {
+	position: absolute;
+	width: 50%;
+	top: 50%;
+	left: 25%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+/* 	background: white; */
+	background: #f4f2e9;
+	padding: 3em;
+}
+
+.workshop-container.workshop {
+	background: url('/shared/images/workshop/bg_workshop.jpg') top left no-repeat;
+	background-size: contain;
+}
+
+.workshop-container.workshop-wood {
+	background: url('/shared/images/workshop/bg_workshop-wood.jpg') top right no-repeat;
+	background-size: contain;
+}
+
+.workshop-container.workshop > .inner {
+	right: -75%;
+}
+
+.cat-label {
+	margin-top: 1em;
+}
+
+.post-sumally-body strong {
+	z-index: 9999;
+	display: block;
+	position: absolute;
+	top: -10px; left: -10px;
+	width: 55px;
+	height: 55px;
+	padding: 20px 5px;
+	background: #dd5151;
+	text-align: center;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #fff;
+	border-radius: 50px; /* CSS3 */
+	behavior: url(ie-css3.htc);  /* for less than IE8 */
+	-moz-border-radius: 50px; /* Firefox */
+	-webkit-border-radius: 50px; /* Safari and Chrome */
+}
+
+.post-sumally-body ul.ws-detail {
+	display: block;
+}
+
+/* スタッフ
+==================================================================================== */
+.section-title.partner {
+	text-align: left;
+}
+
+.section.section-staff-single .post-sumally-body,
+.section.section-staff-single .profile-image {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	float: inherit;
+}
+
+/* スムースマルシェ
+==================================================================================== */
+#sumusmarche .fullwidth-bg-container h3 {
+	font-size: 22px; font-size: 2.2rem;
+}
+
+/* タイトル */
+#sumusmarche .fullwidth-bg-container h2 img {
+	width: 280px;
+}
+
+/* マルシェパートナー */
+.post-sumally.marche .post-sumally-read {
+	font-size: 13px; font-size: 1.3rem;
+}
+
+
+/* 家づくりの流れ
+==================================================================================== */
+.l-flow-inner-left {
+	float: left;
+	width: 50%;
+}
+
+.l-flow-inner-right {
+	float: right;
+	width: 50%;
+	padding: 0 0 0 1.5em;
+}
+
+.l-flow-inner-right > h3 {
+	font-size: 18px; font-size: 1.8rem;
+	font-weight: normal;
+	margin: 0 0 1em;
+	text-align: left;
+}
+
+/* こだわり
+==================================================================================== */
+body#quality .l-read-top {
+/*
+	background-image: url('/shared/images/quality/bg_001.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: contain;
+*/
+}
+
+.special-container {
+	padding: 2.5em 0 0;
+}
+
+.row.passive-item {
+	width: 90%;
+}
+
+.l-special-inner-left {
+	float: left;
+	width: 40%;
+}
+
+.l-special-inner-right {
+	float: right;
+	width: 59%;
+	padding: 0 0 0 1.5em;
+}
+
+.l-special-inner img {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.l-basic-inner-left {
+	float: none;
+	width: 100%;
+}
+
+.l-basic-inner-right {
+	float: none;
+	width: 100%;
+	padding: 0;
+}
+
+.basic-container .container {
+	width: 83%;
+}
+
+
+/* スムースの想い
+==================================================================================== */
+body#about .message h2 {
+	font-size: 30px;
+	font-size: 3.0rem;
+	padding: 0 0 1.5em 0;
+}
+
+body#about .message p {
+	text-align: center;
+	line-height: 2;
+}
+
+.section-philosophy img.profile {
+	float: right;
+	width: 200px;
+	padding: 2em 0 1em;
+}
+
+/* 住むサポ
+==================================================================================== */
+table.tenken {
+	font-size:14px; font-size:1.4rem;
+}
+
+table.tenken th,
+table.tenken th.small,
+table.tenken td {
+	font-size:12px; font-size:1.2rem;
+}
+
+.section-philosophy img.profile-name {
+	width: 90px;
+}
+
+/* マルシェ
+==================================================================================== */
+#sumusmarche .fullwidth-bg {
+	position: relative;
+	background: url("/shared/images/marche/bg-mainvisual-pc.jpg") center center no-repeat;
+	background-size: cover;
+}
+}
+
+/* min-width:992px
+==================================================================================== */
+@media screen and (min-width:992px) {
+
+/* スムースの想い
+==================================================================================== */
+body#about .message p {
+	text-align: left;
+	line-height: 2;
+}
+
+body#about .message h2 {
+	font-size: 36px;
+	font-size: 3.6rem;
+	padding: 0 0 1.5em 0;
+}
+
+body#about .verse.one {
+	position: relative;
+	width: 90%;
+	min-height: 350px;
+	margin: 0 auto;
+}
+
+.verse.one p {
+	padding: 0 0 0 0;
+}
+
+img.positon-01 {
+	width: 380px;
+	position: absolute;	
+	top: 2em; right: 3em;
+}
+
+img.positon-02 {
+	position: absolute;	
+	bottom: 15px;
+	left: 180px;
+}
+
+body#about .verse.two {
+}
+
+body#about .verse.two .wrapper {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 480px;
+	padding: 3em 0;
+}
+
+body#about .verse.two .inner {
+	width: 55%;
+	float: right; 
+}
+
+img.positon-03 {
+	width: 380px;
+	position: absolute;	
+	top: 0; left: -80px;
+}
+
+img.positon-04 {
+	position: absolute;	
+	bottom: -25px; left: 125px;
+}
+
+img.positon-05 {
+	position: absolute;	
+	bottom: 0px; right: 80px;
+}
+
+img.positon-06 {
+	position: absolute;	
+	top: 0; right: -110px;
+}
+
+img.positon-07 {
+	position: absolute;	
+	top: 55px; left: 100px;
+}
+
+body#about .verse.three {
+	position: relative;
+	width: 71%;
+	float: none; 
+	min-height: 480px;
+	margin: 3em auto;
+	padding-top: 320px;
+}
+
+.l-special-inner {
+	padding: 2em 15px 2em 15px;
+}
+
+.marche-visual-single .left {
+	float: left;
+	width: 50%;
+	min-height: 410px;
+}
+
+.marche-visual-single .right {
+	float: right;
+	width: 50%;
+	min-height: 410px;
+}
+}
+
+/* min-width:1200px
+==================================================================================== */
+@media screen and (min-width:1200px) {
+
+/* 　こだわり
+==================================================================================== */
+body#quality .l-mainvisual-sub {
+	width: 100%; height: 600px;
+}
+}

@@ -1,0 +1,346 @@
+@charset "utf-8";
+
+/* pagetop
+------------------------------------------------------------------------------- */
+.banner {
+	display: none;
+	position: fixed;
+	bottom: 2.5em;
+	right: 3em;
+	z-index: 99999;
+	font-size: 10px;
+}
+
+.banner img {
+	width: 160px;
+}
+
+.ground.lp p {
+	line-height: 2;
+	margin-bottom: 1.5em;
+}
+.ground.lp footer p {
+	line-height: 2;
+	margin-bottom: auto;
+}
+
+.ground.lp h2 {
+	font-size: 24px; font-size: 2.4rem;
+	margin-bottom: 1em;
+	color: #423d2f;
+	font-weight: bold;
+}
+
+.ground.lp .read-section {
+	position: relative;
+}
+
+
+
+#slider-fullwin .sp-mask {
+	border-top: none;
+}
+
+.slider-banner {
+	width: 160px;
+	bottom: -30px;
+}
+
+.slider-pro.lp {
+	padding-top: 67px;
+}
+
+.container.lp {
+	margin: 4em auto;
+	max-width: 970px;
+}
+.none-padding {
+	margin: 0 auto;
+}
+
+.point-wapper .container {
+	max-width: none;
+}
+
+.container.works {
+	max-width: 720px;
+}
+
+.works {
+	text-align: center;
+}
+
+.kodawari-section {
+	background-color: #F7F7ED;
+	min-height: 370px;
+}
+
+.kodawari-section .photo{
+	float: left;
+	display: block;
+	width: 50%;
+	min-height: 370px;
+	background-image: url("../images/lp/bg.png");
+	background-size: cover;
+}
+
+.kodawari-section .photo img{
+	width: 100%;
+}
+
+.kodawari-section .text {
+	float: right;
+	width: 50%;
+	padding: 4em 4em;
+}
+
+.kodawari-section .inner {
+	width: 85%;
+}
+
+.contactBox {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.works .inner {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.kodawari-section .inner .button-container {
+	text-align: left;
+}
+
+.kodawari-section .inner p {
+	margin: 0 0 3em 0;
+}
+
+
+/* 主な仕様
+---------------------------------------- */
+.shiyou-wrapper {
+	max-width: 1140px;
+	margin: 4em auto;
+}
+
+.shiyou {
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em 2em 0;
+}
+
+.box {
+	display: block;
+}
+
+.box h3 {
+	padding: 0.7em 0.5em;
+	text-align: center;
+}
+
+.box p {
+	font-size: 12px; font-size: 1.2rem;
+	padding: 1.5em;
+}
+
+.box.red {
+	border: 4px solid #eae8e0;
+}
+.box.red h3 {
+	background: #eae8e0;
+}
+.box.blue {
+	border: 4px solid #eae8e0;
+}
+.box.blue h3 {
+	background: #eae8e0;
+}
+
+.mv-sub {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+ 
+
+
+
+
+/* 979px for tablet
+---------------------------------------- */
+@media screen and (max-width: 1024px) { 
+
+
+.kodawari-section .inner {
+	width: 100%;
+}
+.kodawari-section .text{
+	padding: 2em 4em;
+}
+.kodawari-section .inner p {
+	margin: 0 0 2em 0;
+}
+
+
+}
+
+/* 979px for tablet
+---------------------------------------- */
+@media screen and (max-width: 979px) { 
+
+	
+.container.lp {
+	margin: 3.5em auto;
+}
+
+.kodawari-section .photo{
+	float: none;
+	width: 100%;
+	min-height: 370px;
+	background-image: url("../images/lp/bg.png");
+	background-size: cover;
+}
+
+.kodawari-section .photo img{
+	width: 100%;
+}
+
+.kodawari-section .text{
+	float: none;
+	width: 100%;
+}
+
+.kodawari-section .text{
+	padding: 3em 4em;
+}
+
+.kodawari-section .inner {
+	width: 100%;
+}
+
+.kodawari-section .inner h2,
+.kodawari-section .inner .button-container {
+	text-align: center;
+}
+
+
+}
+
+/* 767px for tablet&smartphone
+---------------------------------------- */
+@media screen and (max-width: 767px) { 
+
+.slider-pro.lp {
+	padding-top: 66px;
+}
+
+.read-section h2,
+.read-section p {
+	text-align: center;
+}
+
+.kodawari-section .text{
+	padding: 3em 2em;
+}
+
+.kodawari-section .photo{
+	min-height: 200px;
+	background-image: url("../images/lp/bg.png");
+}
+
+.shiyou-wrapper {
+	margin: 3em auto 2em;
+}
+
+.shiyou {
+	padding: 1em 0.5em 0;
+}
+
+.box {
+	margin: 0 1em 2em 1em;
+}
+
+.read-section {
+	position: relative;
+	max-width: 90%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+
+img.book {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	width: 90px;
+}
+
+img.chair {
+	position: absolute;
+	bottom: 0px;
+	left: 20px;
+	width: 90px;
+}
+
+
+}
+
+/* 479px for tablet&smartphone
+---------------------------------------- */
+@media screen and (max-width: 479px) {
+
+.banner {
+	bottom: 20px;
+	right: 10px;
+}
+
+.banner img {
+	width: 80px;
+}
+
+.contactBox {
+	width: 90%;
+}
+
+.works p {
+	text-align: left;
+}
+
+.works p.works-text {
+	text-align: center;
+}
+
+.read-section {
+	max-width: 100%;
+	padding-bottom: 70px;
+}
+
+img.book {
+	width: 70px;
+}
+
+img.chair {
+	width: 80px;
+	left: 15px;
+}
+}
+
+
+@media screen and (max-width: 320px) {
+
+.read-section {
+	padding-bottom: 100px;
+}
+img.book {
+	position: absolute;
+	top: 135px;
+	right: -20px;
+	width: 70px;
+}
+
+img.chair {
+	bottom: 10px;
+	left: 0;
+	width: 80px;
+}
+}
+
