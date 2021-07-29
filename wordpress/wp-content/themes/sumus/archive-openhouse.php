@@ -35,29 +35,31 @@ get_header(); ?>
 		</div>
 	</div><!-- /.container -->
 	
-	
+	<?php
+		$yesterday = strtotime('yesterday 23:59:59');
+		$yesterday = date('Y-m-d', $yesterday);
+		$toplist = array(
+		    'post_type' => 'openhouse',
+		    'showposts' => 6,
+		    'post_status' => array('publish', 'future'),
+	    	'orderby' => 'date',
+			'order' => 'DESC',
+	    	'date_query' => array(
+		        'column' => 'post_date',
+		        'after' => date('Y-m-d H:i:s')
+		    ),
+		);
+		query_posts($toplist);
+		if (have_posts()):
+      ?>
+      
 	<div class="container">
 	<div class="section-title">
 		<h3 class="heading-01 none-mb">最新の完成見学会</h3>
 	</div><!-- /.section-title -->
 	<div class="row">
-			<?php
-			$yesterday = strtotime('yesterday 23:59:59');
-			$yesterday = date('Y-m-d', $yesterday);
-      $toplist = array(
-	        'post_type' => 'openhouse',
-	        'showposts' => 6,
-	        'post_status' => array('publish', 'future'),
-	        'orderby' => 'date',
-        	'order' => 'DESC',
-	        'date_query' => array(
-			        'column' => 'post_date',
-			        'after' => $yesterday
-			    ),
-        );
-      ?>
-      <?php query_posts($toplist); ?>
-      <?php if (have_posts()):while(have_posts()):the_post(); ?>
+			
+      <?php while(have_posts()):the_post(); ?>
 
 						<div class="openhouse-banner clearfix" style="margin-bottom: 2em;">
 			<div class="image">
@@ -89,11 +91,12 @@ get_header(); ?>
 			</div><!-- /.info -->
 				
 					</div><!-- /.openhouse-banner -->
-		<?php endwhile; endif; ?>
-          <?php wp_reset_postdata(); wp_reset_query(); ?>
+		<?php endwhile;  ?>
 
 					</div><!--/.row-->
+
 </div><!--/.container-->
+<?php endif; wp_reset_postdata(); wp_reset_query(); ?>
 	<div class="point-wapper">
 		<div class="container">
 			<div class="l-section-title">
@@ -190,7 +193,7 @@ get_header(); ?>
 	        'date_query' => array(
 			        'column' => 'post_date',
 			        /*'after' => '2021-07-12'*/
-			        'before' => date('Y-m-d')
+			        'before' => date('Y-m-d H:i:s')
 			    ),
         );
       ?>

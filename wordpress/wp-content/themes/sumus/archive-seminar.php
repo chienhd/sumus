@@ -31,9 +31,18 @@
 		<div class="row" style="padding-top: 1em;">
 			<div class="col-md-12 col-sm-12">
 				<?php
+				$yesterday = strtotime('yesterday 23:59:59');
+				$yesterday = date('Y-m-d', $yesterday);
 				$toplist = array(
 					'post_type' => 'seminar',
-					'showposts' => 1,
+					'showposts' => 6,
+					'post_status' => array('publish', 'future'),
+		    	'orderby' => 'date',
+					'order' => 'DESC',
+		    	'date_query' => array(
+			        'column' => 'post_date',
+			        'after' => date('Y-m-d H:i:s')
+			    ),
 				);
 				?>
 				<?php query_posts($toplist); ?>
@@ -104,7 +113,15 @@
 				$toplist = array(
 					'post_type' => 'seminar',
 					'showposts' => 6,
-					'paged' => get_query_var( 'paged', 1 )
+					'paged' => get_query_var( 'paged', 1 ),
+					'post_status' => array('publish'),
+	        'orderby' => 'date',
+        	'order' => 'DESC',
+	        'date_query' => array(
+			        'column' => 'post_date',
+			        /*'after' => '2021-07-12'*/
+			        'before' => date('Y-m-d H:i:s')
+			    ),
 				);
 				?>
 				<?php query_posts($toplist); ?>

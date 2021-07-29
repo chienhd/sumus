@@ -83,33 +83,20 @@ echo $tag->name.'';
 					</div></div>
 				<?php endif ?>
 
-				<div class="clearfix" style="max-width: 770px; margin: 0 auto;">
-
-					<script src="https://gridstackjs.com/node_modules/gridstack/dist/gridstack-h5.js"></script>
-					<link href="https://gridstackjs.com/node_modules/gridstack/dist/gridstack.min.css" rel="stylesheet"/>
-					<style type="text/css">
-					  	.grid-stack { background: #FAFAD2; }
-					  	.grid-stack-item-content { background-color: #18BC9C; }
-					  	.grid-stack>.grid-stack-item[gs-w="2"]  { width: 100%; }
-						.grid-stack>.grid-stack-item[gs-w="1"]  { width: 49.9% }
-						.grid-stack>.grid-stack-item[gs-x='1'] { left: 50%; }
-					</style>
-
-					<?php echo 
-					'<div class="grid-stack grid-stack-12 grid-stack-instance-4843 grid-stack-animate grid-stack-2" gs-current-row="2" style="height: 1024px;"><div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="0" gs-w="2" gs-h="1" style=""><div class="grid-stack-item-content" draggable="true"><img src="http://localhost:8383/wp-content/uploads/2021/07/DSC02612.jpg"></div><div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div></div><div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="0" gs-y="1" gs-w="1" gs-h="1" style=""><div class="grid-stack-item-content" draggable="true"><img src="http://localhost:8383/wp-content/uploads/2021/07/profile.jpg"></div><div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div></div><div class="grid-stack-item ui-draggable ui-resizable ui-resizable-autohide" gs-x="1" gs-y="1" gs-w="1" gs-h="1" style=""><div class="grid-stack-item-content" draggable="true"><img src="http://localhost:8383/wp-content/uploads/2021/07/profile.jpg"></div><div class="ui-resizable-handle ui-resizable-se" style="z-index: 100; user-select: none;"></div></div></div>';
+				<div class="wrap-gird-stack" style="max-width: 965px; margin: 0 auto; height: auto;">
+					<?php
+						$id = get_the_ID();
+						$sumus_gridstack_name = get_post_meta($id, 'sumus_gridstack_name', true);
 					?>
-
+					<script src="/wp-content/themes/sumus/assets/girdstack/gridstack-h5.js"></script>
+					<link href="/wp-content/themes/sumus/assets/girdstack/gridstack.min.css" rel="stylesheet"/>
+					<div class="grid-stack"></div>
 					<script type="text/javascript">
-						var items = [
-					    {content: '<img	src="http://localhost:8383/wp-content/uploads/2021/07/profile.jpg">'}, // will default to location (0,0) and 1x1
-					    {content: '<img	src="http://localhost:8383/wp-content/uploads/2021/07/profile.jpg">'}, // will default to location (0,0) and 1x1
-					    {w: 2, content: '<img	src="http://localhost:8383/wp-content/uploads/2021/07/DSC02612.jpg">'} // will be placed next at (1,0) and 2x1
-					    ];
+						var getItems = <?php echo json_decode($sumus_gridstack_name); ?>;
 					    var grid = GridStack.init({column: 2});
-					    grid.load();
+					    grid.load(getItems);
 					    grid.enableMove(false, false);
 					    grid.enableResize(false, false);
-
 					</script>
 				</div>
 

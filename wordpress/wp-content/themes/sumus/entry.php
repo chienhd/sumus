@@ -8,8 +8,7 @@ $toplist = array(
     'post_type' => 'openhouse',
     'posts_per_page' => -1,
     'post_status' => array('publish', 'future'),
-    'orderby' => 'date',
-    'order' => 'DESC',
+    'p' => $_COOKIE['prevoius-post-type-openhouse'],
 );
 
 $query = new WP_Query($toplist);

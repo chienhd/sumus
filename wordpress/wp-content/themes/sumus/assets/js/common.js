@@ -139,11 +139,14 @@ $(document).ready(function() {
 		let openhouseId = getCookie('prevoius-post-type-openhouse') || 0;
 		let html = '';
 		let selected = '';
-		for (let [key, value] of Object.entries(jsonOpenhouse)) {
-		  html += `<option value="${key}" ${(openhouseId === key) ? 'selected' : '' }>${value}</option>`;
-		}
-
-		$('select[name="registered"]').html(html);
+		let first = Object.entries(jsonOpenhouse)[0];
+		$('[name="registered"]').val(first[1]);
+		$('[name="registered"]').prop("readonly", true);
+		$('[name="registered"]').css({
+		    'opacity': '0.8',
+		    'cursor': 'not-allowed',
+		    'pointer-events': 'none'
+		});
 	}
 	if(typeof ENTRY_DATE !== typeof undefined && ENTRY_DATE.length) {
 		let jsonEntryDate = JSON.parse(ENTRY_DATE);
@@ -165,4 +168,4 @@ $(document).ready(function() {
 		$('select[name="time02"]').append(html);
 		$('select[name="time03"]').append(html);
 	}
-})
+});

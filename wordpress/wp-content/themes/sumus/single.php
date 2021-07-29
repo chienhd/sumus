@@ -20,9 +20,7 @@ get_header();
 			// Start the Loop.
 			while ( have_posts() ) :
 				the_post();
-$id = get_the_ID();
-	$banner_img = get_post_meta($id, 'chientest', true);	
-	dd( $banner_img);
+
 				get_template_part( 'template-parts/content/content', 'single' );
 
 				if ( is_singular( 'attachment' ) ) {

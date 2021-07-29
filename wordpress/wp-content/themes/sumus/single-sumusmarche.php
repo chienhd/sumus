@@ -55,7 +55,8 @@
                 $args = array(
                     'post_type' => 'marche_partner',
                     'posts_per_page' => -1,
-                    'post_status' => array('publish'),
+                    'post_status' => array('publish', 'future'),
+                    'post__in' => $marchePartnerValue,
                 );
 
                 $query = new WP_Query($args);
